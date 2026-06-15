@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Webinar July 1 · The 4 Stages of a Profitable Cleaning Business</title>
+<meta name="description" content="Free 90-minute live webinar on building a profitable, peaceful cleaning business. Wednesday July 1, 2026 at 12pm Pacific. Hosted by Vic and Jen with breakouts with seven Inner Circle mentors." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --cream: #F5F0EB;
+  --cream-soft: #FAF8F5;
+  --sage: #6BA5A0;
+  --sage-dark: #558580;
+  --taupe: #B09080;
+  --ink: #3A2E2A;
+  --ink-soft: #5C4F4A;
+  --navy: #0A1628;
+  --rule: #E8E0D6;
+  --shadow: 0 4px 20px rgba(58,46,42,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.12;
+  letter-spacing: -.015em;
+  margin: 0 0 .4em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
+h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+h3 { font-size: 1.3rem; }
+p { margin: 0 0 1.1em; }
+a { color: var(--sage-dark); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.narrow { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+/* Top banner */
+.banner {
+  background: var(--navy);
+  color: var(--cream-soft);
+  padding: 14px 0;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .02em;
+}
+.banner .sage { color: var(--sage); font-weight: 600; }
+
+/* Nav */
+nav.site {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.site .brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .98rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--ink);
+  border-bottom: 3px solid var(--sage);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+nav.site ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+  font-size: .92rem;
+}
+nav.site ul a { color: var(--ink-soft); text-decoration: none; }
+nav.site ul a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding: 70px 0 50px; }
+.hero h1 { max-width: 22ch; }
+.hero .meta-row {
+  display: flex; flex-wrap: wrap; gap: 22px;
+  margin-top: 1.4em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: .98rem;
+  color: var(--ink);
+}
+.hero .meta-row .pill {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  padding: 10px 16px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow);
+}
+.hero .meta-row .pill .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--sage);
+}
+.hero .sub {
+  font-size: 1.15rem; max-width: 70ch; color: var(--ink-soft); margin-top: 1.4em;
+}
+.hero .cta-row { margin-top: 2.2rem; display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+.btn {
+  display: inline-block;
+  background: var(--sage);
+  color: var(--cream-soft);
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { background: var(--sage-dark); color: var(--cream-soft); transform: translateY(-1px); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--cream-soft); }
+.hero .micro {
+  font-size: .9rem; color: var(--ink-soft); max-width: 60ch;
+  margin-top: 1.2em; border-left: 2px solid var(--taupe); padding-left: 14px;
+}
+
+.hero-visual {
+  margin-top: 60px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--cream-soft);
+}
+.hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; }
+.hero-visual .caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 30px 28px 22px;
+  background: linear-gradient(180deg, transparent, rgba(10,22,40,.8));
+  color: var(--cream-soft);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .95rem;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--rule);
+}
+section:last-of-type { border-bottom: none; }
+section.dark {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-bottom: none;
+}
+section.dark h1, section.dark h2, section.dark h3 { color: var(--cream-soft); }
+section.dark p { color: #D7D0C6; }
+section.dark .eyebrow { color: var(--sage); }
+section.tinted { background: var(--cream-soft); }
+
+/* Stages cards (4 phases) */
+.stages {
+  display: grid; gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+}
+@media (max-width: 720px) { .stages { grid-template-columns: 1fr; } }
+.stage-card {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 28px 26px;
+  box-shadow: var(--shadow);
+}
+.stage-card h3 { margin-bottom: .3em; }
+.stage-card .range {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+.stage-card p { font-size: .95rem; }
+
+/* Format list */
+.format {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px 36px;
+  margin-top: 30px;
+}
+.format-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+.format-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: .4em;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.format-item h3 .num {
+  color: var(--sage-dark);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.format-item p { font-size: .96rem; margin-bottom: 0; }
+
+/* Prize box */
+.prize {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 32px 30px;
+  box-shadow: var(--shadow);
+  margin-top: 30px;
+}
+.prize h3 { margin-bottom: 12px; }
+.prize ul { padding-left: 0; list-style: none; margin: 18px 0 0; }
+.prize li {
+  padding: 10px 0;
+  border-top: 1px dashed var(--rule);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .96rem;
+}
+.prize li:first-child { border-top: none; }
+.prize li .price-tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: var(--sage-dark);
+}
+.prize .total {
+  margin-top: 18px; padding-top: 18px; border-top: 2px solid var(--ink);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex; justify-content: space-between;
+}
+
+/* Hosts */
+.hosts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+@media (max-width: 720px) { .hosts { grid-template-columns: 1fr; } }
+.host {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+}
+.host .photo { width: 35%; aspect-ratio: 1; background: var(--rule); }
+.host .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.host .body { padding: 22px 24px; flex: 1; }
+.host h3 { font-size: 1.1rem; margin-bottom: .2em; }
+.host .role {
+  font-family: 'Inter', sans-serif;
+  font-size: .85rem; color: var(--taupe); font-weight: 500;
+  margin-bottom: 10px;
+}
+.host p { font-size: .92rem; margin-bottom: 0; }
+@media (max-width: 720px) { .host { flex-direction: column; } .host .photo { width: 100%; aspect-ratio: 4/3; } }
+
+/* Mentors row (small) */
+.mentor-row {
+  display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px;
+}
+.mentor-chip {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 8px 16px 8px 8px;
+  font-size: .9rem;
+}
+.mentor-chip img {
+  width: 36px; height: 36px; border-radius: 50%; object-fit: cover;
+}
+.mentor-chip strong { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+/* Registration block */
+.signup {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-radius: 16px;
+  padding: 48px 40px;
+  margin: 0 auto;
+  max-width: 820px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.signup h2 { color: var(--cream-soft); }
+.signup p { color: #D7D0C6; }
+.signup .luma-placeholder {
+  background: rgba(245,240,235,.06);
+  border: 1px dashed rgba(245,240,235,.3);
+  border-radius: 12px;
+  padding: 36px 24px;
+  margin-top: 20px;
+  color: #D7D0C6;
+  font-size: .92rem;
+}
+.signup .luma-placeholder code {
+  background: rgba(0,0,0,.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--sage);
+}
+.signup .micro { margin-top: 18px; font-size: .88rem; color: #C6BEB3; }
+
+/* FAQ */
+.faq { max-width: 760px; margin: 30px auto 0; }
+.faq details {
+  border-top: 1px solid var(--rule);
+  padding: 18px 0;
+}
+.faq details:last-child { border-bottom: 1px solid var(--rule); }
+.faq summary {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  position: absolute; right: 0; top: 0;
+  font-size: 1.4rem; color: var(--sage-dark);
+}
+.faq details[open] summary::after { content: "-"; }
+.faq details[open] p { margin-top: 12px; }
+
+/* Footer */
+footer { background: var(--navy); color: #C6BEB3; padding: 50px 0; font-size: .9rem; }
+footer .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+@media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+footer h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-soft); font-weight: 700; margin-bottom: 14px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { margin-bottom: 8px; }
+footer a { color: #C6BEB3; text-decoration: none; }
+footer a:hover { color: var(--cream-soft); }
+footer .colophon { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .82rem; color: #8A8278; text-align: center; }
+
+
+@media (max-width: 720px) {
+  nav.site ul { display: none; }
+  .hero { padding: 50px 0 30px; }
+  section { padding: 60px 0; }
+  .signup { padding: 36px 24px; }
+}
+</style>
+<!-- SEO and social sharing -->
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/webinar-july-1/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/webinar-july-1/" />
+<meta property="og:title" content="Free Webinar July 1 · The 4 Stages of a Profitable Cleaning Business" />
+<meta property="og:description" content="Free 90-minute live webinar on building a profitable, peaceful cleaning business. Wednesday July 1, 2026 at 12pm Pacific. Hosted by Vic and Jen with breakouts with seven Inner Circle mentors." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Free Webinar July 1 · The 4 Stages of a Profitable Cleaning Business" />
+<meta name="twitter:description" content="Free 90-minute live webinar on building a profitable, peaceful cleaning business. Wednesday July 1, 2026 at 12pm Pacific. Hosted by Vic and Jen with breakouts with seven Inner Circle mentors." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cleaning Company Blueprint",
+  "url": "https://cleaningcompanyblueprint.com",
+  "logo": "https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg",
+  "description": "Coaching brand for cleaning business owners, founded by sisters Vic and Jen Westcott who scaled Oak Bay Clean to $2.8M in four years.",
+  "founder": [
+    {"@type": "Person", "name": "Victoria Westcott", "jobTitle": "Co-founder"},
+    {"@type": "Person", "name": "Jen Westcott", "jobTitle": "Co-founder"}
+  ],
+  "sameAs": [
+    "https://www.youtube.com/@CleaningCompanyBlueprint",
+    "https://stan.store/cleaningcompanyblueprint",
+    "https://cleaning-company-blueprint.beehiiv.com"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The 4 Stages of Building a Profitable and Peaceful Cleaning Business",
+  "description": "Free 90-minute live webinar with Vic and Jen Westcott. The four stages of building a cleaning business from $0 to $50K+ a month.",
+  "startDate": "2026-07-01T12:00:00-07:00",
+  "endDate": "2026-07-01T13:30:00-07:00",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {"@type": "VirtualLocation", "url": "https://us06web.zoom.us/meeting/register/HZ907Ip8ROOsTcEqM81UQA"},
+  "organizer": {"@type": "Organization", "name": "Cleaning Company Blueprint", "url": "https://cleaningcompanyblueprint.com"},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "url": "https://us06web.zoom.us/meeting/register/HZ907Ip8ROOsTcEqM81UQA",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When exactly is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wednesday July 1, 2026 at 12:00 PM Pacific Time. 90 minutes long, ending around 1:30 PM Pacific."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Completely free. No upsell during the call, no time-limited bonus pressure, no fake countdown."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I can't make it live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Register anyway. The recording goes out within 24 hours to everyone who registered, and stays available for 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to already have a cleaning business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The webinar covers all four stages, including pre-launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the connection to the Inner Circle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Inner Circle is a weekly Zoom community for cleaning business owners that runs the same way this webinar runs. The webinar is the best way to see the room in action before deciding if it's a fit."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Top banner -->
+<div class="banner">
+  Free Live Webinar <span class="sage">·</span> Wednesday July 1, 2026 at 12:00 PM Pacific <span class="sage">·</span> 90 minutes
+</div>
+
+<!-- Nav -->
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Free Live Webinar</span>
+    <h1>The 4 stages of a profitable, peaceful cleaning business.</h1>
+    <p class="sub">
+      From $0 to $50K+ a month, walked through stage by stage. Vic and Jen unpack the model that built Oak Bay Clean to $2.8M in four years, the wall at each stage, and how to know when you've broken through. Plus breakout rooms with the seven Inner Circle mentors so you can ask questions about your exact stage.
+    </p>
+    <div class="meta-row">
+      <span class="pill"><span class="dot"></span>Wednesday July 1, 2026</span>
+      <span class="pill"><span class="dot"></span>12:00 PM Pacific</span>
+      <span class="pill"><span class="dot"></span>90 minutes</span>
+      <span class="pill"><span class="dot"></span>Free</span>
+    </div>
+    <div class="cta-row">
+      <a href="https://us06web.zoom.us/meeting/register/HZ907Ip8ROOsTcEqM81UQA" target="_blank" rel="noopener noreferrer" class="btn">Register on Zoom →</a>
+      <a href="#agenda" class="btn ghost">See the agenda</a>
+    </div>
+    <p class="micro">
+      Live attendees are entered to win a digital products bundle worth over $120 from stan.store/CleaningCompanyBlueprint. Registrants who can't make it live get the recording.
+    </p>
+
+    <div class="hero-visual">
+      <img src="/images/vic-and-jen.jpg" alt="Vic and Jen, sisters and co-founders of Cleaning Company Blueprint" />
+      <div class="caption">
+        <strong>Vic and Jen</strong> hosting live, with the seven mentors in breakout rooms.
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- What you'll learn -->
+<section id="agenda">
+  <div class="wrap narrow">
+    <span class="eyebrow">What you'll walk away with</span>
+    <h2>The actual playbook, stage by stage.</h2>
+    <p>
+      Most cleaning business advice online treats the business like one thing. It isn't. It's four. The wall at $5K is not the wall at $25K, and the wall at $50K is not the wall at $25K. Trying to use one playbook across all four stages is why most owners stall. In 90 minutes, you'll get the version that adapts to where you actually are.
+    </p>
+    <p>
+      You'll leave knowing exactly which stage you're in, what the wall looks like in your stage, what the next stage requires, and what you should stop doing right now if you want to get there. You'll also see the way Vic and Jen run the room, including what makes the Inner Circle different from every other coaching offer in this space.
+    </p>
+  </div>
+</section>
+
+<!-- The 4 stages -->
+<section class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">The framework</span>
+    <h2 style="max-width:22ch;">Four stages. The wall at each one.</h2>
+    <p class="narrow" style="margin-left:0;margin-top:14px;">
+      Each stage in the webinar comes with the wall most owners hit there, the change in mindset that gets you through, and the specific actions that move the needle. You'll see real examples from real businesses inside the Inner Circle.
+    </p>
+
+    <div class="stages">
+      <div class="stage-card">
+        <span class="range">Stage 1</span>
+        <h3>The Leap</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$0 to $10K/month</div>
+        <p>Pre-launch or newly launched. You're setting prices, picking tools, chasing your first recurring client. The wall is analysis paralysis: you have too many options and not enough motion. The breakthrough is picking one thing and committing for 90 days.</p>
+      </div>
+      <div class="stage-card">
+        <span class="range">Stage 2</span>
+        <h3>The Engine</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$10K to $25K/month</div>
+        <p>The model is proven. You're exhausted from doing everything yourself. The wall is tuning the engine: fixing the systems so you spend your time on what actually matters. The breakthrough is letting go of the things you're best at, in service of the things only you can do.</p>
+      </div>
+      <div class="stage-card">
+        <span class="range">Stage 3</span>
+        <h3>The Boring Phase</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$25K to $50K/month</div>
+        <p>It's working and it's steady. The wall here is boredom disguised as ambition, and the instinct to reinvent a wheel that's already rolling. The breakthrough is keeping your hands off and trusting the system you built.</p>
+      </div>
+      <div class="stage-card">
+        <span class="range">Stage 4</span>
+        <h3>The Other Side</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$50K+/month</div>
+        <p>You built this to buy back your time and your money. You have both. The wall is choosing what's next. Scale to $100K? Sell? Run it under an hour a day and live the freedom? This stage is about making that choice on purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Format -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How it runs</span>
+    <h2>90 minutes. Real conversation. Breakouts with the mentors.</h2>
+    <div class="format">
+      <div class="format-item">
+        <h3><span class="num">00:00</span> Welcome and the four stages, walked through</h3>
+        <p>Vic and Jen open the room and walk through each of the four stages, with the wall and the breakthrough at each. Live audio, no slides over slides over slides. About 45 minutes.</p>
+      </div>
+      <div class="format-item">
+        <h3><span class="num">45:00</span> Breakout rooms with mentors by stage</h3>
+        <p>You're placed in a breakout with the mentor who runs the stage you're in. Nakita, Adam, or Ash for The Leap. Luke for The Engine. Cecilia for The Boring Phase. Vic and Jen for The Other Side. Twenty minutes of small-group questions and answers about your specific situation.</p>
+      </div>
+      <div class="format-item">
+        <h3><span class="num">65:00</span> Open Q&A and the announcement</h3>
+        <p>Back in the main room. Live Q&A from anything that came up in the breakouts, plus the announcement of the July, August, and September themes inside the Inner Circle, and how the room runs the rest of the year.</p>
+      </div>
+      <div class="format-item">
+        <h3><span class="num">85:00</span> Live attendee prize draw</h3>
+        <p>One live attendee wins the full digital products bundle from stan.store/CleaningCompanyBlueprint. Worth over $120. Has to be there live to win.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prize -->
+<section class="tinted">
+  <div class="wrap narrow">
+    <span class="eyebrow">For live attendees only</span>
+    <h2>The bundle one of you walks away with.</h2>
+    <p>One live attendee, drawn at random in the last five minutes of the webinar, wins everything below. Full price, exactly what you'd pay if you bought it from the store today. Has to be there live, in the room, when the draw happens.</p>
+
+    <div class="prize">
+      <h3>The full digital products bundle</h3>
+      <ul>
+        <li>22-Day Cleaning Company Blueprint Ebook <span class="price-tag">$27</span></li>
+        <li>Client Onboarding Templates (Standard + Move Out, Canva editable) <span class="price-tag">$9.99</span></li>
+        <li>Cleaner Onboarding Template (Canva editable) <span class="price-tag">$17</span></li>
+        <li>Google PPC Ads Negative Keyword List (2,950+ keywords) <span class="price-tag">$27</span></li>
+        <li>Bachelor Boost Marketing Kit <span class="price-tag">$37</span></li>
+      </ul>
+      <div class="total"><span>Total bundle value</span><span>$117.99</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Hosts -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Hosting the room</span>
+    <h2>The sisters who built it, and the mentors in the breakouts.</h2>
+
+    <div class="hosts">
+      <div class="host">
+        <div class="photo"><img src="/images/mentor-vic.jpg" alt="Victoria Westcott" /></div>
+        <div class="body">
+          <h3>Victoria Westcott</h3>
+          <div class="role">Co-founder · Cleaning Company Blueprint</div>
+          <p>Vic co-founded Oak Bay Clean in 2021 with her sister Jen and helped scale it to $2.8M in four years. Former teacher, former movie producer, and the person to ask about hiring. She runs the weekly Inner Circle room.</p>
+        </div>
+      </div>
+      <div class="host">
+        <div class="photo"><img src="/images/mentor-jen.jpg" alt="Jen Westcott" /></div>
+        <div class="body">
+          <h3>Jen Westcott</h3>
+          <div class="role">Co-founder · Cleaning Company Blueprint</div>
+          <p>Jen co-founded Oak Bay Clean alongside Vic. She's a writer and director with a movie streaming on Netflix and a single mom of three. The cleaning business is what bought her the freedom to write full time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px;">
+      <span class="eyebrow" style="display:block;margin-bottom:14px;">In the breakout rooms</span>
+      <div class="mentor-row">
+        <div class="mentor-chip"><img src="/images/mentor-nakita.jpg" alt="Nakita" /><div><strong>Nakita</strong><br/><span style="font-size:.78rem;color:var(--taupe);">Maid in Tysons · The Leap</span></div></div>
+        <div class="mentor-chip"><img src="/images/mentor-adam.jpg" alt="Adam" /><div><strong>Adam</strong><br/><span style="font-size:.78rem;color:var(--taupe);">Wexford Cleaning · The Leap</span></div></div>
+        <div class="mentor-chip"><img src="/images/mentor-ash.jpg" alt="Ash" /><div><strong>Ash</strong><br/><span style="font-size:.78rem;color:var(--taupe);">Cincy Maids · The Leap</span></div></div>
+        <div class="mentor-chip"><img src="/images/mentor-luke.jpg" alt="Luke" /><div><strong>Luke</strong><br/><span style="font-size:.78rem;color:var(--taupe);">Sixth Sense · The Engine</span></div></div>
+        <div class="mentor-chip"><img src="/images/mentor-cecilia.jpg" alt="Cecilia" /><div><strong>Cecilia</strong><br/><span style="font-size:.78rem;color:var(--taupe);">Rosie Cleans · The Boring Phase</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration -->
+<section id="register" class="dark">
+  <div class="wrap">
+    <div class="signup">
+      <span class="eyebrow">Save your seat</span>
+      <h2>Register for the free 90-minute webinar.</h2>
+      <p>Wednesday July 1, 2026 at 12:00 PM Pacific. Live registration plus the recording for those who can't make it.</p>
+
+      <a href="https://us06web.zoom.us/meeting/register/HZ907Ip8ROOsTcEqM81UQA" target="_blank" rel="noopener noreferrer" class="btn" style="background:var(--sage);color:var(--cream-soft);font-size:1.1rem;padding:18px 36px;margin-top:18px;">
+        Register on Zoom →
+      </a>
+      <p class="micro" style="color:#C6BEB3;border-color:rgba(176,144,128,.5);max-width:48ch;margin:24px auto 0;">
+        Registration takes 30 seconds on Zoom. You'll get a confirmation email with the join link, a calendar invite, plus reminders the day before and one hour before the call. Recording is sent within 24 hours and stays available for 48 hours.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">Have questions?</span>
+    <h2 style="text-align:center;">The details.</h2>
+
+    <div class="faq">
+      <details>
+        <summary>When exactly is it?</summary>
+        <p>Wednesday July 1, 2026 at 12:00 PM Pacific Time. That's 3:00 PM Eastern, 8:00 PM London, 5:00 AM Sydney (Thursday). 90 minutes long, ending around 1:30 PM Pacific.</p>
+      </details>
+      <details>
+        <summary>Is it really free?</summary>
+        <p>Yes. Completely free. No upsell during the call, no time-limited bonus pressure, no fake countdown. We host these public webinars four times a year as a way to introduce people to the Inner Circle. If the room is for you, you'll know by the end. If it isn't, you'll still leave with the four-stage framework.</p>
+      </details>
+      <details>
+        <summary>What if I can't make it live?</summary>
+        <p>Register anyway. The recording goes out within 24 hours to everyone who registered, live attendee or not. The only thing you miss is the breakout rooms with the mentors and the live attendee prize draw.</p>
+      </details>
+      <details>
+        <summary>Do I need to already have a cleaning business?</summary>
+        <p>No. The webinar covers all four stages, including pre-launch. If you're curious about starting a cleaning business, you'll get the most value from the first 30 minutes. If you're already running one, you'll get the most value from your stage's section and the breakout room.</p>
+      </details>
+      <details>
+        <summary>What's the connection to the Inner Circle?</summary>
+        <p>The Inner Circle is a weekly Zoom community for cleaning business owners that runs the same way this webinar runs: stage-based, mentor one stage ahead, real conversation. Doors are currently closed. They'll open again later this year. The webinar is the best way to see the room in action before deciding if it's a fit.</p>
+      </details>
+      <details>
+        <summary>How do I win the prize?</summary>
+        <p>Be live in the Zoom when the draw happens at the 85-minute mark. We pull one name at random from the live attendee list. The winner gets the full digital products bundle from stan.store/CleaningCompanyBlueprint, worth $117.99 at full price.</p>
+      </details>
+      <details>
+        <summary>Will it be recorded forever?</summary>
+        <p>The recording goes out to registrants within 24 hours and stays available for 48 hours. After that, the content rolls into the Inner Circle's archive for members. We keep the window short on purpose so the live event stays the live event.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="dark">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Last call</span>
+    <h2 style="max-width:24ch;margin-left:auto;margin-right:auto;">90 minutes that change how you see your cleaning business.</h2>
+    <p style="max-width:60ch;margin-left:auto;margin-right:auto;color:#D7D0C6;">
+      Wednesday July 1, 2026 at 12:00 PM Pacific. Hosted by Vic and Jen, with breakout rooms with all seven Inner Circle mentors. Free. One attendee wins the bundle.
+    </p>
+    <a href="https://us06web.zoom.us/meeting/register/HZ907Ip8ROOsTcEqM81UQA" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:24px;">Register on Zoom →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/videos">Videos</a></li>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+          <li><a href="/name-my-cleaning-company">Name my cleaning company</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

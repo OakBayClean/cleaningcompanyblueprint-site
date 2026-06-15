@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tools we use · Cleaning Company Blueprint</title>
+<meta name="description" content="The tools Vic and Jen use to run Oak Bay Clean: ConvertLabs, Quo, NiceJob, and Foxquilt. Honest recommendations with discounts negotiated for our community." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --cream: #F5F0EB;
+  --cream-soft: #FAF8F5;
+  --sage: #6BA5A0;
+  --sage-dark: #558580;
+  --taupe: #B09080;
+  --ink: #3A2E2A;
+  --ink-soft: #5C4F4A;
+  --navy: #0A1628;
+  --rule: #E8E0D6;
+  --shadow: 0 4px 20px rgba(58,46,42,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.12;
+  letter-spacing: -.015em;
+  margin: 0 0 .4em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.6rem, 2.8vw, 2.3rem); }
+h3 { font-size: 1.4rem; }
+p { margin: 0 0 1.1em; }
+a { color: var(--sage-dark); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.narrow { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+/* Top banner */
+.banner {
+  background: var(--navy);
+  color: var(--cream-soft);
+  padding: 14px 0;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .02em;
+}
+.banner .sage { color: var(--sage); font-weight: 600; }
+.banner a { color: var(--cream-soft); text-decoration: underline; }
+
+/* Nav */
+nav.site {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.site .brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .98rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--ink);
+  border-bottom: 3px solid var(--sage);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+nav.site ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+  font-size: .92rem;
+}
+nav.site ul a { color: var(--ink-soft); text-decoration: none; }
+nav.site ul a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding: 70px 0 40px; }
+.hero h1 { max-width: 22ch; }
+.hero .sub { font-size: 1.15rem; max-width: 65ch; color: var(--ink-soft); margin-top: 1.2em; }
+
+/* Disclosure */
+.disclosure {
+  background: var(--cream-soft);
+  border-left: 3px solid var(--taupe);
+  padding: 18px 22px;
+  border-radius: 6px;
+  margin-top: 30px;
+  font-size: .92rem;
+  color: var(--ink-soft);
+  max-width: 700px;
+}
+.disclosure strong { color: var(--ink); font-family: 'Plus Jakarta Sans', sans-serif; }
+
+/* Sections */
+section {
+  padding: 70px 0;
+  border-bottom: 1px solid var(--rule);
+}
+section:last-of-type { border-bottom: none; }
+section.tinted { background: var(--cream-soft); }
+section.dark {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-bottom: none;
+}
+section.dark h2 { color: var(--cream-soft); }
+section.dark p { color: #D7D0C6; }
+section.dark .eyebrow { color: var(--sage); }
+
+/* Tool cards */
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 40px;
+}
+.tool {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: 36px 36px 32px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .tool { grid-template-columns: 1fr; padding: 28px; }
+}
+.tool .body h3 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.tool .body h3 .category {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  font-weight: 700;
+  background: var(--cream);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+.tool .description {
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.tool .what {
+  font-size: .94rem;
+  color: var(--ink-soft);
+}
+.tool .pricing {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--rule);
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+.tool .pricing strong {
+  color: var(--sage-dark);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.tool .cta-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 180px;
+}
+.btn {
+  display: inline-block;
+  background: var(--sage);
+  color: var(--cream-soft);
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--sage-dark); color: var(--cream-soft); transform: translateY(-1px); }
+
+/* Footer */
+footer {
+  background: var(--navy);
+  color: #C6BEB3;
+  padding: 50px 0;
+  font-size: .9rem;
+}
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+footer h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--cream-soft); font-weight: 700; margin-bottom: 14px;
+}
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { margin-bottom: 8px; }
+footer a { color: #C6BEB3; text-decoration: none; }
+footer a:hover { color: var(--cream-soft); }
+footer .colophon {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  font-size: .82rem;
+  color: #8A8278;
+}
+
+
+@media (max-width: 720px) {
+  nav.site ul { display: none; }
+  .hero { padding: 50px 0 30px; }
+  section { padding: 50px 0; }
+}
+</style>
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/tools/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/tools/" />
+<meta property="og:title" content="Tools we use · Cleaning Company Blueprint" />
+<meta property="og:description" content="The tools Vic and Jen use to run Oak Bay Clean: ConvertLabs, Quo, NiceJob, and Foxquilt. Honest recommendations with discounts negotiated for our community." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tools we use · Cleaning Company Blueprint" />
+<meta name="twitter:description" content="The tools Vic and Jen use to run Oak Bay Clean: ConvertLabs, Quo, NiceJob, and Foxquilt. Honest recommendations with discounts negotiated for our community." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com","logo":"https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg","founder":[{"@type":"Person","name":"Victoria Westcott"},{"@type":"Person","name":"Jen Westcott"}],"sameAs":["https://www.youtube.com/@CleaningCompanyBlueprint","https://stan.store/cleaningcompanyblueprint","https://cleaning-company-blueprint.beehiiv.com"]}</script>
+</head>
+<body>
+
+<!-- Top banner -->
+<div class="banner">
+  Free webinar Wednesday July 1 at 12pm Pacific <span class="sage">·</span> <a href="/webinar-july-1">The 4 stages of building a peaceful cleaning business →</a>
+</div>
+
+<!-- Nav -->
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/book-a-call">Book a call</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">The tools we actually use</span>
+    <h1>Run a cleaning business with the same tools we run ours with.</h1>
+    <p class="sub">
+      The same tools Vic and Jen use to run Oak Bay Clean. Discounts negotiated for our community.
+    </p>
+
+    <div class="disclosure">
+      <strong>About these links:</strong> Some are affiliate links. Same price as going direct, and several get you a discount through this page. We only list tools we use ourselves.
+    </div>
+  </div>
+</header>
+
+<!-- Name My Cleaning Company feature -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Free tool we built</span>
+    <h2 style="max-width:26ch;">Not sure what to name your cleaning company? Check your market first.</h2>
+    <p style="max-width:60ch;color:var(--ink-soft);margin-top:1em;">The same market research Vic and Jen run on every discovery call is now free and instant. Enter your city and get a real competitor teardown, ranked business names with domain availability, and local pricing guidance.</p>
+
+    <div style="background:var(--cream-soft);border:1px solid var(--rule);border-radius:16px;padding:36px;box-shadow:var(--shadow);margin-top:36px;display:flex;gap:36px;align-items:flex-start;flex-wrap:wrap;">
+      <div style="flex:1;min-width:260px;">
+        <h3 style="margin-bottom:10px;">namemycleaningcompany.com</h3>
+        <p style="color:var(--ink-soft);margin-bottom:20px;">Free instant report. No sign-up required. Covers market verdict, competitor data, ranked business names, and what to charge in your area.</p>
+        <a href="/name-my-cleaning-company" style="display:inline-block;background:var(--sage);color:var(--cream-soft);padding:14px 24px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem;text-decoration:none;">See how it works →</a>
+        <a href="https://namemycleaningcompany.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-left:14px;color:var(--sage-dark);font-size:.9rem;">or go straight to the tool</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tools list -->
+<section class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">The full stack</span>
+    <h2 style="max-width:24ch;">Four tools, the actual jobs they do, and the discount through us.</h2>
+
+    <div class="tools-list">
+
+      <!-- ConvertLabs -->
+      <div class="tool">
+        <div class="body">
+          <h3>ConvertLabs <span class="category">All-in-one platform</span></h3>
+          <p class="description">
+            The platform Oak Bay Clean runs on. Quotes, online booking, scheduling, customer database, payments. All in one place. Built by Kevin, the same Kevin who asked Vic and Jen to share their playbook on YouTube.
+          </p>
+          <div class="pricing">
+            <strong>30 days free</strong> through this link. Regular price is $197/month.
+          </div>
+        </div>
+        <div class="cta-area">
+          <a href="https://convertlabs.io/blueprint" target="_blank" rel="noopener noreferrer" class="btn">Try ConvertLabs →</a>
+        </div>
+      </div>
+
+      <!-- Quo -->
+      <div class="tool">
+        <div class="body">
+          <h3>Quo <span class="category">Business phone system</span></h3>
+          <p class="description">
+            The phone system that lets a cleaning business actually answer the phone. One number, multiple devices, shared inboxes for clients and cleaners. Voicemail-to-text. After-hours auto-replies. Notes on every contact so the next person picking up has context.
+          </p>
+          <div class="pricing">
+            <strong>20% off for a year</strong> through this link.
+          </div>
+        </div>
+        <div class="cta-area">
+          <a href="https://get.openphone.com/1bu8m8i8th0d" target="_blank" rel="noopener noreferrer" class="btn">Try Quo →</a>
+        </div>
+      </div>
+
+      <!-- NiceJob -->
+      <div class="tool">
+        <div class="body">
+          <h3>NiceJob <span class="category">Reviews and reputation</span></h3>
+          <p class="description">
+            Automated review requests after every clean. Routes happy customers to Google or Yelp, lets unhappy ones tell us privately first. The reason Oak Bay Clean is "Best House Cleaning Company Victoria" three years running.
+          </p>
+          <div class="pricing">
+            <strong>50% off for two months</strong> through this link. Regular price is $75/month.
+          </div>
+        </div>
+        <div class="cta-area">
+          <a href="https://try.nicejob.com/466zrc19ni3l" target="_blank" rel="noopener noreferrer" class="btn">Try NiceJob →</a>
+        </div>
+      </div>
+
+      <!-- Foxquilt -->
+      <div class="tool">
+        <div class="body">
+          <h3>Foxquilt <span class="category">Insurance</span></h3>
+          <p class="description">
+            The broker we use because they actually understand the cleaning industry. Quotes tailored for cleaning teams operating in residential and small commercial spaces, including independent contractor models.
+          </p>
+          <div class="pricing">
+            Affiliate link. Pricing depends on your business size and location, and Foxquilt quotes you direct.
+          </div>
+        </div>
+        <div class="cta-area">
+          <a href="https://get.foxquilt.com/oakbayclean" target="_blank" rel="noopener noreferrer" class="btn">Get a quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="dark">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Inside the room</span>
+    <h2 style="max-width:26ch;margin-left:auto;margin-right:auto;">Inner Circle members get the full setup walked through, with Vic and Jen and the mentors.</h2>
+    <a href="/inner-circle" style="display:inline-block;background:var(--sage);color:var(--cream-soft);padding:16px 30px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;text-decoration:none;margin-top:24px;">
+      See what's inside →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

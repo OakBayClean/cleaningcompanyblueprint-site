@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Inner Circle · Cleaning Company Blueprint</title>
+<meta name="description" content="Weekly Zoom accountability community for cleaning business owners. Four phases, seven mentors, $47/month for founding members." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream:         #F5F0EB;
+    --cream-soft:    #FAF8F5;
+    --ink:           #3A2E2A;
+    --ink-soft:      #5A4E49;
+    --sage:          #6BA5A0;
+    --sage-dark:     #4E8480;
+    --taupe:         #B09080;
+    --navy:          #0A1628;
+    --navy-2:        #0E3046;
+    --rule:          #E6DFD6;
+    --shadow:        0 2px 10px rgba(58,46,42,.07);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--ink);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 .5em;
+    font-weight: 700;
+  }
+  h1 { font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 800; letter-spacing: -0.025em; }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+  h3 { font-size: 1.3rem; }
+  p  { margin: 0 0 1.1em; color: var(--ink); }
+  a  { color: var(--sage-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 28px; }
+  .narrow { max-width: 780px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  /* Banner */
+  .banner {
+    background: var(--navy);
+    color: var(--cream-soft);
+    font-size: .86rem;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .banner strong { color: var(--sage); font-weight: 600; }
+
+  /* Nav */
+  nav.site {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    background: var(--cream);
+  }
+  nav.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .wordmark {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: .95rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border-bottom: 3px solid var(--sage);
+    padding-bottom: 2px;
+  }
+  nav.site ul { list-style: none; padding:0; margin:0; display: flex; gap: 28px; font-size: .92rem; }
+  nav.site ul a { color: var(--ink-soft); }
+
+  /* Hero */
+  .hero {
+    padding: 90px 0 70px;
+    position: relative;
+  }
+  .hero h1 { max-width: 22ch; }
+  .hero .sub { font-size: 1.15rem; max-width: 75ch; color: var(--ink-soft); margin-top: 1.2em; }
+  .hero .cta-row { margin-top: 2.2rem; display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .btn {
+    display: inline-block;
+    background: var(--sage);
+    color: var(--cream-soft);
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .01em;
+    border: none;
+    cursor: pointer;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover { background: var(--sage-dark); text-decoration: none; transform: translateY(-1px); }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+  .hero .micro {
+    font-size: .88rem; color: var(--ink-soft); max-width: 52ch;
+    margin-top: 1.2em; border-left: 2px solid var(--taupe); padding-left: 14px;
+  }
+
+  .hero-visual {
+    margin-top: 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    aspect-ratio: 4/3;
+    background: var(--cream-soft);
+  }
+  .hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
+  .hero-visual .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 28px 22px;
+    background: linear-gradient(180deg, transparent, rgba(10,22,40,.78));
+    color: var(--cream-soft);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .92rem;
+    letter-spacing: .04em;
+  }
+  .hero-visual .caption strong { color: var(--cream-soft); font-weight: 700; }
+
+  /* Countdown band */
+  .countdown {
+    background: var(--navy);
+    color: var(--cream-soft);
+    padding: 48px 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .countdown .label {
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .countdown-grid {
+    display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+  }
+  .c-unit {
+    min-width: 84px;
+  }
+  .c-num {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--cream-soft);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .c-lab {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-top: 8px;
+  }
+
+  /* Section */
+  section {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  section:last-of-type { border-bottom: none; }
+  section.dark {
+    background: var(--navy);
+    color: var(--cream-soft);
+    border-bottom: none;
+  }
+  section.dark h1, section.dark h2, section.dark h3 { color: var(--cream-soft); }
+  section.dark p { color: #D7D0C6; }
+  section.dark .eyebrow { color: var(--sage); }
+
+  section.tinted { background: var(--cream-soft); }
+
+  /* Phase cards */
+  .phases {
+    display: grid; gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+  }
+  @media (max-width: 720px) {
+    .phases { grid-template-columns: 1fr; }
+  }
+  .phase-card {
+    background: var(--cream-soft);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 28px 26px;
+    box-shadow: var(--shadow);
+  }
+  .phase-card h3 { margin-bottom: .3em; }
+  .phase-card .range {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .78rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .phase-card .mentors {
+    border-top: 1px dashed var(--rule);
+    margin-top: 16px;
+    padding-top: 14px;
+    font-size: .92rem;
+    color: var(--ink);
+  }
+  .phase-card .mentors strong { color: var(--sage-dark); }
+
+  /* Feature list */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px 36px;
+    margin-top: 30px;
+  }
+  .feature {
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .feature h3 {
+    font-size: 1.05rem;
+    margin-bottom: .4em;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .feature h3::before {
+    content: ""; display: inline-block;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--sage); flex: 0 0 auto;
+    transform: translateY(-2px);
+  }
+  .feature p { font-size: .95rem; color: var(--ink-soft); margin: 0; }
+
+  /* Mentor grid */
+  .mentors {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .mentor { grid-column: span 2; }
+  /* Last row of 3 cards: shift right by half a column to center in 4-col layout */
+  .mentor:nth-child(5) { grid-column: 2 / span 2; }
+  @media (max-width: 1000px) {
+    .mentors { grid-template-columns: repeat(2, 1fr); }
+    .mentor, .mentor:nth-child(5) { grid-column: auto; }
+  }
+  @media (max-width: 600px) {
+    .mentors { grid-template-columns: 1fr; }
+  }
+  .mentor {
+    background: var(--cream-soft);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column;
+  }
+  .mentor .photo {
+    aspect-ratio: 4/3;
+    background: #d9cfc3;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--taupe);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .mentor .photo img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .mentor .body { padding: 22px 24px 24px; }
+  .mentor h3 { font-size: 1.12rem; margin-bottom: .1em; }
+  .mentor .biz {
+    font-family: 'Inter', sans-serif;
+    font-size: .85rem; color: var(--taupe); font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .mentor .biz a {
+    color: var(--taupe);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(176,144,128,.4);
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .mentor .biz a:hover {
+    color: var(--sage-dark);
+    border-bottom-color: var(--sage-dark);
+  }
+  .mentor .meta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .8rem; letter-spacing: .06em;
+    color: var(--sage-dark); font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .mentor p { font-size: .94rem; color: var(--ink); }
+  .mentor .hotseat {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: .86rem;
+    font-weight: 600;
+    color: var(--sage-dark);
+  }
+
+  /* Quotes */
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+  }
+  .quote {
+    background: var(--cream-soft);
+    border-left: 4px solid var(--taupe);
+    padding: 28px 26px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: var(--shadow);
+  }
+  .quote .tag {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .76rem; letter-spacing: .14em;
+    color: var(--sage-dark); text-transform: uppercase;
+    font-weight: 700; margin-bottom: 14px; display: block;
+  }
+  .quote blockquote {
+    margin: 0 0 14px; padding: 0;
+    font-size: 1.05rem; line-height: 1.55;
+    color: var(--ink);
+  }
+  .quote cite {
+    display: block; font-style: normal;
+    font-size: .85rem; color: var(--ink-soft);
+  }
+  .phase-counts {
+    margin-top: 40px;
+    font-size: .92rem;
+    color: var(--ink-soft);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Pricing */
+  .pricing-card {
+    background: var(--cream-soft);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 44px 40px;
+    max-width: 720px; margin: 40px auto 0;
+    box-shadow: var(--shadow);
+  }
+  .pricing-card .tiers {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 20px; margin-bottom: 28px;
+  }
+  .tier {
+    padding: 20px;
+    background: var(--cream);
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+  }
+  .tier.featured {
+    background: var(--navy);
+    color: var(--cream-soft);
+    border-color: var(--navy);
+  }
+  .tier .price {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .tier .per {
+    font-size: .85rem; color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .tier.featured .per { color: #C6BEB3; }
+  .tier .who {
+    font-size: .9rem;
+  }
+  .pricing-card ul.includes {
+    list-style: none; padding: 0; margin: 20px 0;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px;
+  }
+  .pricing-card ul.includes li {
+    font-size: .94rem;
+    padding-left: 22px; position: relative;
+  }
+  .pricing-card ul.includes li::before {
+    content: ""; position: absolute; left: 0; top: 10px;
+    width: 8px; height: 8px; border-radius: 2px;
+    background: var(--sage);
+  }
+  .cancel-note {
+    font-size: .86rem; color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 16px; margin-top: 4px;
+  }
+
+  /* Not for */
+  .not-for-list {
+    display: grid; gap: 20px;
+    margin-top: 32px;
+  }
+  .not-for-item {
+    background: var(--cream-soft);
+    border-radius: 12px;
+    padding: 26px 28px;
+    border-left: 3px solid var(--taupe);
+  }
+  .not-for-item strong {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: block; margin-bottom: 8px;
+    color: var(--ink);
+  }
+
+  /* Form */
+  .signup {
+    background: var(--navy);
+    color: var(--cream-soft);
+    border-radius: 20px;
+    padding: 60px 50px;
+    text-align: center;
+    max-width: 700px; margin: 40px auto 0;
+  }
+  .signup h2 { color: var(--cream-soft); }
+  .signup p { color: #D7D0C6; max-width: 46ch; margin: 0 auto 26px; }
+  .signup form {
+    display: flex; flex-direction: column; gap: 12px; max-width: 420px; margin: 0 auto;
+  }
+  .signup input {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #2B3647;
+    background: #0E1B30;
+    color: var(--cream-soft);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+  }
+  .signup input:focus { outline: 2px solid var(--sage); border-color: var(--sage); }
+  .signup button { width: 100%; margin-top: 4px; }
+  .signup .micro {
+    font-size: .82rem; color: #A7A095; margin-top: 18px; max-width: 46ch;
+    margin-left: auto; margin-right: auto;
+  }
+
+  /* FAQ */
+  .faq { margin-top: 36px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  .faq details {
+    border-bottom: 1px solid var(--rule);
+    padding: 20px 4px;
+  }
+  .faq details[open] summary { color: var(--sage-dark); }
+  .faq summary {
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq summary::after {
+    content: "+"; font-size: 1.4rem; font-weight: 300; color: var(--sage-dark);
+    transition: transform .2s ease;
+  }
+  .faq details[open] summary::after { content: "-"; }
+  .faq details p {
+    margin-top: 12px; color: var(--ink-soft); font-size: .96rem;
+  }
+
+  /* Final CTA */
+  .final {
+    background: linear-gradient(180deg, var(--navy) 0%, #06101D 100%);
+    color: var(--cream-soft);
+    padding: 100px 0;
+    text-align: center;
+  }
+  .final h2 {
+    color: var(--cream-soft);
+    font-size: clamp(2rem, 4vw, 3rem);
+    max-width: 20ch; margin: 0 auto .6em;
+  }
+  .final p { color: #D7D0C6; max-width: 60ch; margin: 0 auto 30px; }
+  .final .btn { font-size: 1.05rem; padding: 18px 36px; }
+
+  /* Footer */
+  footer { background: var(--navy); color: #C6BEB3; padding: 50px 0; font-size: .9rem; }
+  footer .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+  footer h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-soft); font-weight: 700; margin-bottom: 14px; }
+  footer ul { list-style: none; padding: 0; margin: 0; }
+  footer ul li { margin-bottom: 8px; }
+  footer a { color: #C6BEB3; text-decoration: none; }
+  footer a:hover { color: var(--cream-soft); }
+  footer .colophon { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .82rem; color: #8A8278; text-align: center; }
+
+
+  /* Mobile */
+  @media (max-width: 720px) {
+    .hero { padding: 60px 0 40px; }
+    section { padding: 60px 0; }
+    nav.site ul { display: none; }
+    .pricing-card { padding: 30px 22px; }
+    .pricing-card .tiers { grid-template-columns: 1fr; }
+    .pricing-card ul.includes { grid-template-columns: 1fr; }
+    .signup { padding: 44px 24px; }
+  }
+</style>
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/inner-circle/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/inner-circle/" />
+<meta property="og:title" content="The Inner Circle · Cleaning Company Blueprint" />
+<meta property="og:description" content="Weekly Zoom accountability community for cleaning business owners. Four phases, seven mentors, $47/month for founding members." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Inner Circle · Cleaning Company Blueprint" />
+<meta name="twitter:description" content="Weekly Zoom accountability community for cleaning business owners. Four phases, seven mentors, $47/month for founding members." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com","logo":"https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg","description":"Coaching brand for cleaning business owners, founded by sisters Vic and Jen Westcott who scaled Oak Bay Clean to $2.8M in four years.","founder":[{"@type":"Person","name":"Victoria Westcott","jobTitle":"Co-founder"},{"@type":"Person","name":"Jen Westcott","jobTitle":"Co-founder"}],"sameAs":["https://www.youtube.com/@CleaningCompanyBlueprint","https://stan.store/cleaningcompanyblueprint","https://cleaning-company-blueprint.beehiiv.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"The Inner Circle","description":"Weekly Zoom accountability community for cleaning business owners.","provider":{"@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com"},"url":"https://cleaningcompanyblueprint.com/inner-circle/","offers":{"@type":"Offer","price":"47","priceCurrency":"USD","category":"subscription","availability":"https://schema.org/InStock","url":"https://hub-kjwd18e6wq.membership.io/register"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When do doors actually open?", "acceptedAnswer": {"@type": "Answer", "text": "Wednesday July 1, 2026 at 1:00 PM Pacific."}}, {"@type": "Question", "name": "What if I'm not ready to start a business yet?", "acceptedAnswer": {"@type": "Answer", "text": "The Pre-Launch phase is the biggest group in the room."}}, {"@type": "Question", "name": "Is this US-only?", "acceptedAnswer": {"@type": "Answer", "text": "No. Members in Canada, the US, the UK, Australia, and South Africa are already inside."}}, {"@type": "Question", "name": "What's the refund policy?", "acceptedAnswer": {"@type": "Answer", "text": "Cancel anytime from your dashboard."}}, {"@type": "Question", "name": "How is this different from the 22-Day Blueprint ebook?", "acceptedAnswer": {"@type": "Answer", "text": "The ebook is the how-to. The Inner Circle is the room that holds you accountable."}}, {"@type": "Question", "name": "Will there be live training events?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, four free public webinars a year plus monthly Hot Seats inside the Inner Circle."}}]}</script>
+</head>
+<body>
+
+
+<!-- Top banner -->
+<div class="banner">
+  Doors open Wednesday July 1, 2026 at 1:00 PM Pacific &nbsp;·&nbsp; <strong>47 founding members already inside</strong>
+</div>
+
+<!-- Nav -->
+<nav class="site">
+  <div class="wrap">
+    <div class="wordmark">CLEANING COMPANY BLUEPRINT</div>
+    <ul>
+      <li><a href="#why">Why</a></li>
+      <li><a href="#phases">The room</a></li>
+      <li><a href="#mentors">Mentors</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#waitlist">Waitlist</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">The Inner Circle</span>
+    <h1>Build your cleaning business in a room of people doing it too.</h1>
+    <p class="sub">
+      The Inner Circle is a weekly Zoom accountability community for owners building cleaning businesses at every stage, from pre-launch to past six figures. Vic and Jen run it. Seven mentors sit in the room. Forty-seven founding members are already building alongside each other. Doors open for new members on Wednesday July 1, 2026 at 1:00 PM Pacific, and close one week later.
+    </p>
+    <div class="cta-row">
+      <a href="https://hub-kjwd18e6wq.membership.io/register" target="_blank" rel="noopener noreferrer" class="btn">Join the Inner Circle →</a>
+      <a href="#phases" class="btn ghost">See what's inside</a>
+    </div>
+    <p class="micro">
+      You'll be the first to hear when doors open. Everyone who joins the waitlist before July 8 locks in the founding rate of $47/month (a $10 discount off the $57 new-member rate) and gets a dedicated onboarding call.
+    </p>
+
+    <div class="hero-visual">
+      <img src="/images/vic-and-jen.jpg" alt="Vic and Jen, sisters and co-founders of Cleaning Company Blueprint" />
+      <div class="caption">
+        <strong>Vic and Jen.</strong> Sisters. Co-founders. They built Oak Bay Clean to $2.8M in four years and now run The Inner Circle together.
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Countdown -->
+<div class="countdown" id="countdown">
+  <div class="wrap">
+    <div class="label">Doors open for new members in</div>
+    <div class="countdown-grid">
+      <div class="c-unit"><div class="c-num" id="cd-days">--</div><div class="c-lab">Days</div></div>
+      <div class="c-unit"><div class="c-num" id="cd-hours">--</div><div class="c-lab">Hours</div></div>
+      <div class="c-unit"><div class="c-num" id="cd-mins">--</div><div class="c-lab">Minutes</div></div>
+      <div class="c-unit"><div class="c-num" id="cd-secs">--</div><div class="c-lab">Seconds</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Why this exists -->
+<section id="why">
+  <div class="wrap narrow">
+    <span class="eyebrow">The reason we built this</span>
+    <h2>Built on a different approach.</h2>
+    <p>
+      Vic and Jen built Oak Bay Clean to $2.8M in four years during the pandemic, after stumbling across a free Twitter course by Rohan Gilkes. A year later, Kevin from ConvertLabs and Rohan asked them to share what they'd learned on YouTube. The 21 Days to Launch series went up free as a way to pay it forward.
+    </p>
+    <p>
+      The more they shared, the clearer it got that their version of the model ran differently than the loud playbook most cleaning business coaches teach. Cleaners first, organic leads, SEO, and clients who respect the people doing the work.
+    </p>
+    <p><strong>The Inner Circle is the room where that approach lives.</strong></p>
+  </div>
+</section>
+
+<!-- Who it's for -->
+<section id="phases" class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">The room</span>
+    <h2>Four phases. One room. A mentor one stage ahead of you.</h2>
+    <p class="narrow" style="margin-top:10px;">
+      When you join, you're placed in your phase. Every phase has owners at the same stage, and a mentor one stage ahead. Everyone's in the full room for the weekly call, and in your phase group for the work that's specific to where you are.
+    </p>
+
+    <div class="phases">
+      <div class="phase-card">
+        <span class="range">Phase 1</span>
+        <h3>The Leap</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$0 to $10K/month</div>
+        <p>Pre-launch or newly launched. You're setting prices, picking tools, chasing your first recurring client. The wall here is analysis paralysis.</p>
+        <div class="mentors">Your mentors: <strong>Nakita, Adam, and Ash</strong></div>
+      </div>
+      <div class="phase-card">
+        <span class="range">Phase 2</span>
+        <h3>The Engine</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$10K to $25K/month</div>
+        <p>The model is proven. You're exhausted from doing everything yourself. The wall is tuning the engine: fixing the systems so you spend your time on what actually matters.</p>
+        <div class="mentors">Your mentor: <strong>Luke</strong></div>
+      </div>
+      <div class="phase-card">
+        <span class="range">Phase 3</span>
+        <h3>The Boring Phase</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$25K to $50K/month</div>
+        <p>It's working and it's steady. The wall here is boredom disguised as ambition, and the instinct to reinvent a wheel that's already rolling.</p>
+        <div class="mentors">Your mentor: <strong>Cecilia</strong></div>
+      </div>
+      <div class="phase-card">
+        <span class="range">Phase 4</span>
+        <h3>The Other Side</h3>
+        <div style="font-family:'Plus Jakarta Sans';font-weight:600;color:var(--ink-soft);margin-bottom:10px;">$50K+/month</div>
+        <p>You built this to buy back your time and your money. You have both. The wall is choosing what's next. Scale to $100K a month? Sell the company? Run it in under an hour a day and actually live the freedom? This phase is about what comes next when you finally have the time and the money to decide.</p>
+        <div class="mentors">Your mentors: <strong>Vic and Jen</strong></div>
+      </div>
+    </div>
+    <p class="narrow" style="margin-top:32px;font-size:.93rem;color:var(--ink-soft);font-style:italic;">
+      Vic and Jen also mentor every phase. Every member has access to both in the full weekly room.
+    </p>
+  </div>
+</section>
+
+<!-- What happens inside -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">A typical month</span>
+    <h2>Weekly Zooms. Monthly themes. Real talk.</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Weekly Zoom, Wednesdays at noon Pacific</h3>
+        <p>Same room, same people every week. Members across Canada, the US, UK, Australia, and South Africa.</p>
+      </div>
+      <div class="feature">
+        <h3>Monthly themes</h3>
+        <p>One topic per month: Leads, Hiring, SEO, and so on. Worksheets, guest experts, and member case studies focused on that theme.</p>
+      </div>
+      <div class="feature">
+        <h3>Hot Seats</h3>
+        <p>Once a month, one member sits in the chair and Vic interviews them about their business. Everyone else watches and asks.</p>
+      </div>
+      <div class="feature">
+        <h3>Guest experts</h3>
+        <p>Monthly sessions with specialists on SEO, ads, hiring, bookkeeping, and operations who actually work with cleaning companies.</p>
+      </div>
+      <div class="feature">
+        <h3>Quarterly goal setting</h3>
+        <p>First week of every quarter: three goals and the one metric that tells you if you're on track.</p>
+      </div>
+      <div class="feature">
+        <h3>The Struggle Bus</h3>
+        <p>Members submit questions in advance and the mentors answer the ones that help the most people in the room.</p>
+      </div>
+      <div class="feature">
+        <h3>Private community</h3>
+        <p>Searchable library of every Hot Seat, guest session, and worksheet, plus a member directory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mentors -->
+<section id="mentors" class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">Who's in the room with you</span>
+    <h2>Seven cleaning business owners. One stage ahead of yours.</h2>
+    <p class="narrow" style="margin-top:12px;">
+      Every mentor runs a real cleaning business. They took the same playbook Vic and Jen hand you and built companies with it, and they show up every week to be honest about what worked, what didn't, and what they'd do differently.
+    </p>
+
+    <div class="mentors">
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-nakita.jpg" alt="Nakita" onerror="this.parentElement.innerHTML='MENTOR-NAKITA.JPG'"/></div>
+        <div class="body">
+          <h3>Nakita</h3>
+          <div class="biz"><a href="https://maidintysons.com" target="_blank" rel="noopener">Maid in Tysons</a> · Virginia</div>
+          <div class="meta">$10K/month · Mentors The Leap</div>
+          <p>Nakita built her cleaning business from the front seat of her car. She works in some of the most secure buildings in the country, where cellphones aren't allowed inside, so her business runs on her breaks. She hit $10K/month in her first year, then drifted off course when her day job ate her time. Joining the Inner Circle pulled her back to the simple model. Now she mentors The Leap with the kind of pay-it-forward energy that lights up a Wednesday call. Ask her how to find clients for free without burning out.</p>
+          <a class="hotseat" href="https://www.youtube.com/live/6nbk_413mG0" target="_blank">Watch Nakita's Hot Seat →</a>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-adam.jpg" alt="Adam" onerror="this.parentElement.innerHTML='MENTOR-ADAM.JPG'"/></div>
+        <div class="body">
+          <h3>Adam</h3>
+          <div class="biz"><a href="https://wexfordcleaning.com" target="_blank" rel="noopener">Wexford Cleaning</a> · Pittsburgh</div>
+          <div class="meta">$25K/month · Mentors The Leap</div>
+          <p>Adam used to sell cars and boats. He met Ash at a poker game, and now they run Wexford Cleaning together in Pittsburgh. Most days you'll find Adam fishing, on the golf course, or at the poker table. He was done making other people rich. Now he builds on his own terms while making a real impact in his community. Adam mentors The Leap because he's the person to ask about the customer call: how to stay in control of the conversation, help the right clients say yes, and politely move the wrong ones along.</p>
+          <a class="hotseat" href="https://www.youtube.com/live/cDihPaRmDjc" target="_blank">Watch Adam and Ash's Hot Seat →</a>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-ash.jpg" alt="Ash" onerror="this.parentElement.innerHTML='MENTOR-ASH.JPG'"/></div>
+        <div class="body">
+          <h3>Ash</h3>
+          <div class="biz"><a href="https://cincymaid.com" target="_blank" rel="noopener">Cincy Maids</a> · Cincinnati</div>
+          <div class="meta">$25K/month · Mentors The Leap</div>
+          <p>Ash ran a restaurant in Dubai before moving back to the USA and starting Cincy Maids in Cincinnati with Adam. The two met at a poker game. Ash mentors The Leap and is the room's resident AI explorer. He's deep in the world of AI tools for managing the financials of a cleaning business, and he tests everything inside his own company before bringing it to the Inner Circle. Members get the benefit of his deep dive without doing the digging themselves.</p>
+          <a class="hotseat" href="https://www.youtube.com/live/cDihPaRmDjc" target="_blank">Watch Adam and Ash's Hot Seat →</a>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-luke.jpg" alt="Luke" onerror="this.parentElement.innerHTML='MENTOR-LUKE.JPG'"/></div>
+        <div class="body">
+          <h3>Luke</h3>
+          <div class="biz"><a href="https://sixthsensecleaning.com" target="_blank" rel="noopener">Sixth Sense Cleaning</a> · Arizona</div>
+          <div class="meta">$25K to $50K/month · Mentors The Engine</div>
+          <p>Luke runs Sixth Sense Cleaning in Arizona. He's exactly one phase ahead of the owners he mentors, in the stretch where the model is proven but the owner is doing too much alone. He just got through what The Engine members are walking into, and he remembers the fork in the road clearly. His wife Amber joined him on the Hot Seat and together they break down what it took to stop being the bottleneck and what changed when he did. He's the mentor for owners whose business is working but who can feel the ceiling closing in.</p>
+          <a class="hotseat" href="https://www.youtube.com/live/PwLIQB6dzw8" target="_blank">Watch Luke and Amber's Hot Seat →</a>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-cecilia.jpg" alt="Cecilia" onerror="this.parentElement.innerHTML='MENTOR-CECILIA.JPG'"/></div>
+        <div class="body">
+          <h3>Cecilia</h3>
+          <div class="biz"><a href="https://rosiecleans.com" target="_blank" rel="noopener">Rosie Cleans</a> · New Jersey &amp; Alabama</div>
+          <div class="meta">$50K+/month · Mentors The Boring Phase</div>
+          <p>Cecilia runs Rosie Cleans across two locations in New Jersey and Alabama, generating over $50,000 a month. She mentors The Boring Phase, where everything is working and the biggest threat is the entrepreneurial instinct to reinvent things that are already running. Her husband Blake joined her on the Hot Seat and they break down the two-location model together, including how they decided when to expand and what the second location looked like in month one. She's the mentor for owners whose business is steady, who want to keep it that way without losing momentum.</p>
+          <a class="hotseat" href="https://www.youtube.com/live/grADiVFt1v4" target="_blank">Watch Cecilia and Blake's Hot Seat →</a>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-vic.jpg" alt="Victoria Westcott" onerror="this.parentElement.innerHTML='MENTOR-VIC.JPG'"/></div>
+        <div class="body">
+          <h3>Victoria Westcott</h3>
+          <div class="biz">Cleaning Company Blueprint &amp; Oak Bay Clean · Canada</div>
+          <div class="meta">Mentors every phase</div>
+          <p>Vic co-founded Oak Bay Clean in 2021 with her sister Jen and helped scale it to $2.8M in four years. She was a school teacher first, then a movie producer. She mentors every phase in the room, with hiring as her ten-thousand-hour specialty. If you're scared to make your first hire, or your tenth, she's the person to ask. She's currently working on a personal challenge of one thousand rejections in a year by applying to film funds, speaking gigs, and podcasts that stretch her well past her comfort zone, which is exactly the energy she brings to a Wednesday call.</p>
+        </div>
+      </div>
+
+      <div class="mentor">
+        <div class="photo"><img src="/images/mentor-jen.jpg" alt="Jen Westcott" onerror="this.parentElement.innerHTML='MENTOR-JEN.JPG'"/></div>
+        <div class="body">
+          <h3>Jen Westcott</h3>
+          <div class="biz">Cleaning Company Blueprint &amp; Oak Bay Clean · Canada</div>
+          <div class="meta">Mentors every phase</div>
+          <p>Jen co-founded Oak Bay Clean alongside Vic. She's a writer and director with a movie streaming on Netflix, and a single mom of three kids who are growing up far too fast. She mentors every phase in the room, bringing the strategic and creative lens she's carried from a career in writing and film. Building Oak Bay Clean is what bought her the freedom to write movies full time and never worry again about paying the bills. These days, when she's not writing or with her kids, she's learning to fly fish and golf.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="dark">
+  <div class="wrap">
+    <span class="eyebrow">Real people, in their own words</span>
+    <h2 style="max-width:22ch;">Support, Growth, Accountability, and Value.</h2>
+    <p class="narrow" style="margin-left:0;">
+      Founding members chose Support, Growth, and Accountability as their top three words for why they joined. And again and again the fourth word that keeps coming up is Value. Here's what those words sound like in their actual voices.
+    </p>
+    <div class="quotes">
+      <div class="quote" style="background:#0E3046;border-left-color:var(--sage);">
+        <span class="tag">Support</span>
+        <blockquote style="color:var(--cream-soft);">"A place to be honest about the pressures of the business and feel less alone. Let's not add pressure to post often."</blockquote>
+        <cite style="color:#C6BEB3;">Inner Circle founding member, April 1 kick-off survey</cite>
+      </div>
+      <div class="quote" style="background:#0E3046;border-left-color:var(--sage);">
+        <span class="tag">Growth</span>
+        <a href="https://effortlesshomeservicesnc.com" target="_blank" rel="noopener noreferrer" style="display:block;margin:0 0 18px;border-radius:10px;overflow:hidden;border:1px solid rgba(245,240,235,.12);">
+          <img src="/images/kristen-revenue-screenshot.png" alt="Kristen's revenue dashboard: $15K gross sales, up 323%, with $13K gross revenue versus $4K previous period (up 282%)" style="width:100%;height:auto;display:block;" />
+        </a>
+        <blockquote style="color:var(--cream-soft);">"After a slow February and March, we have surpassed $10K in revenue and are closing in on my initial goal of $15K a month."</blockquote>
+        <cite style="color:#C6BEB3;">Kristen Keith, <a href="https://effortlesshomeservicesnc.com" target="_blank" rel="noopener noreferrer" style="color:var(--sage);text-decoration:underline;">Effortless Home Services</a>. From The Leap into The Engine in her first four weeks inside the Inner Circle.</cite>
+      </div>
+      <div class="quote" style="background:#0E3046;border-left-color:var(--sage);">
+        <span class="tag">Accountability</span>
+        <blockquote style="color:var(--cream-soft);">"This is absolute GOLD. I'm so glad to have you in my life."</blockquote>
+        <cite style="color:#C6BEB3;">Maegan Griffin, <a href="https://griffinproclean.com" target="_blank" rel="noopener noreferrer" style="color:var(--sage);text-decoration:underline;">Griffin Pro Clean</a>. On the weekly newsletter, April 12, 2026.</cite>
+      </div>
+      <div class="quote" style="background:#0E3046;border-left-color:var(--sage);">
+        <span class="tag">Value</span>
+        <blockquote style="color:var(--cream-soft);">"I still can't believe I'm here and learning all of this valuable info for ONLY $47! Someone pinch me."</blockquote>
+        <cite style="color:#C6BEB3;">Maegan Griffin, <a href="https://griffinproclean.com" target="_blank" rel="noopener noreferrer" style="color:var(--sage);text-decoration:underline;">Griffin Pro Clean</a>. Inner Circle founding member.</cite>
+      </div>
+    </div>
+    <div class="phase-counts" style="color:#A7A095;">
+      Members are currently in these phases: Pre-Launch (14), The Leap (11), The Engine (5), The Boring Phase (2).
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">What it costs</span>
+    <h2 style="text-align:center;max-width:22ch;margin-left:auto;margin-right:auto;">$47/month for waitlist members. $57/month after. Cancel anytime.</h2>
+
+    <div class="pricing-card">
+      <div class="tiers">
+        <div class="tier featured">
+          <div class="price">$47</div>
+          <div class="per">per month, USD</div>
+          <div class="who"><strong>Waitlist members</strong><br/>Lock in the founding rate by joining the waitlist before July 8.</div>
+        </div>
+        <div class="tier">
+          <div class="price">$57</div>
+          <div class="per">per month, USD</div>
+          <div class="who"><strong>After July 8</strong><br/>Standard rate for new members.</div>
+        </div>
+      </div>
+
+      <p style="font-size:.96rem;">
+        Founding members locked in $47/month forever. Anyone who joins the waitlist before doors close on July 8 also locks in the founding rate of $47/month, as a thank-you for being early. After that, the new-member rate is $57/month. Either way: one flat monthly rate, no upsells, no tiers, no add-ons. You're in the room, you get everything.
+      </p>
+
+      <ul class="includes">
+        <li>Weekly live Zoom calls</li>
+        <li>Monthly themed content and worksheets</li>
+        <li>Monthly Hot Seat interviews</li>
+        <li>Monthly guest expert sessions</li>
+        <li>Quarterly goal setting</li>
+        <li>Curated Struggle Bus Q&amp;A</li>
+        <li>Private community and searchable library</li>
+        <li>Phase-based peer grouping</li>
+        <li>Mentor one stage ahead of you</li>
+        <li>Member directory</li>
+      </ul>
+
+      <div class="cancel-note">
+        <strong>Cancel anytime.</strong> If it's not the room for you, you cancel in the dashboard. No questions, no retention calls.
+      </div>
+
+      <div style="text-align:center;margin-top:30px;">
+        <a href="https://hub-kjwd18e6wq.membership.io/register" target="_blank" rel="noopener noreferrer" class="btn">Join the Inner Circle →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Not for -->
+<section class="tinted">
+  <div class="wrap narrow">
+    <span class="eyebrow">The fit check</span>
+    <h2>Built for steady builders.</h2>
+    <p>
+      The Inner Circle is for people doing the work, treating their cleaners like the heart of the business, and curious enough to keep changing their minds in public. It's the wrong room for anyone chasing "millions by next weekend," for closed-off know-it-alls, or for owners who want to buy leads and worry about cleaners later. The room runs on curiosity, care, and the long view.
+    </p>
+    <p style="margin-top:14px;"><strong>If that sounds like you, you're in the right place.</strong></p>
+  </div>
+</section>
+
+<!-- Waitlist form -->
+<section id="waitlist" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="signup">
+      <span class="eyebrow" style="color:var(--sage);">Be the first to hear when doors open</span>
+      <h2>Add your email. You'll be the first to hear when enrollment is live.</h2>
+      <div class="beehiiv-wrap">
+        <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+        <iframe src="https://subscribe-forms.beehiiv.com/9913c538-6fd8-4b79-a6b2-fe205417f121" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 100%; max-width: 708px; height: 315px; margin: 0 auto; display: block; border-radius: 12px; background-color: transparent; box-shadow: 0 0 #0000;"></iframe>
+      </div>
+      <p class="micro">
+        You'll get a welcome email right away with what to expect, plus the weekly Monday newsletter while you wait. When doors open on July 1, you'll be the first to know. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">Have questions?</span>
+    <h2 style="text-align:center;">The details.</h2>
+    <div class="faq">
+      <details>
+        <summary>When do doors actually open?</summary>
+        <p>Wednesday July 1, 2026 at 1:00 PM Pacific. They close one week later, on Wednesday July 8, 2026 at 1:00 PM Pacific. Anyone who joins the waitlist before doors close locks in the founding rate of $47/month (a $10 discount off the $57 new-member rate) and gets a dedicated onboarding call.</p>
+      </details>
+      <details>
+        <summary>What if I'm not ready to start a business yet?</summary>
+        <p>The Pre-Launch phase is the biggest group in the room right now. Fourteen founding members hadn't started when they joined. They're starting inside The Inner Circle with the full room behind them.</p>
+      </details>
+      <details>
+        <summary>Is this US-only?</summary>
+        <p>No. Members in Canada, the US, the UK, Australia, and South Africa are already inside. Wednesdays at noon Pacific was picked because it works across all of those time zones.</p>
+      </details>
+      <details>
+        <summary>What's the refund policy?</summary>
+        <p>You can cancel anytime from your dashboard. Refunds on the current month are case-by-case. Email the team and they'll sort it out.</p>
+      </details>
+      <details>
+        <summary>How is this different from the 22-Day Blueprint ebook?</summary>
+        <p>The ebook is the how-to. The Inner Circle is the room that holds you accountable while you execute it. Most members own both.</p>
+      </details>
+      <details>
+        <summary>Will there be live training events?</summary>
+        <p>Yes. Vic and Jen run a free live webinar four times a year that's open to the whole audience, plus members get monthly Hot Seats, monthly themed deep-dives, and quarterly goal-setting sessions inside the Inner Circle. Anyone on the waitlist gets a personal invite to the next public webinar so you can see the room in action before you join.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>The Inner Circle opens Wednesday July 1, 2026 at 1:00 PM Pacific.</h2>
+    <p>
+      Doors are open for one week and close July 8 at 1:00 PM Pacific. $47/month for waitlist members. $57/month after. Weekly Zooms. Seven mentors. Forty-seven founding members already inside. Cancel anytime.
+    </p>
+    <a href="https://hub-kjwd18e6wq.membership.io/register" target="_blank" rel="noopener noreferrer" class="btn">Join the Inner Circle →</a>
+    <p style="margin-top:30px;font-size:.82rem;color:#7E766D;">All pricing in USD.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/videos">Videos</a></li>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+          <li><a href="/name-my-cleaning-company">Name my cleaning company</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Countdown to July 1, 2026 13:00 PT (PDT = UTC-7 → 20:00 UTC)
+  var target = new Date(Date.UTC(2026, 6, 1, 20, 0, 0)).getTime();
+  function tick() {
+    var now = Date.now();
+    var diff = Math.max(0, target - now);
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent  = String(d).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-mins').textContent  = String(m).padStart(2,'0');
+    document.getElementById('cd-secs').textContent  = String(s).padStart(2,'0');
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
+</body>
+</html>

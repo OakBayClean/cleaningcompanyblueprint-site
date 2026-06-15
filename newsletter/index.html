@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Newsletter · Cleaning Company Blueprint</title>
+<meta name="description" content="One email a week from Vic and Jen on building a profitable cleaning business. Real numbers, real stories, and the free 22-Day Master Checklist." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --cream: #F5F0EB;
+  --cream-soft: #FAF8F5;
+  --sage: #6BA5A0;
+  --sage-dark: #558580;
+  --taupe: #B09080;
+  --ink: #3A2E2A;
+  --ink-soft: #5C4F4A;
+  --navy: #0A1628;
+  --rule: #E8E0D6;
+  --shadow: 0 4px 20px rgba(58,46,42,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.12;
+  letter-spacing: -.015em;
+  margin: 0 0 .4em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.6rem, 2.8vw, 2.3rem); }
+h3 { font-size: 1.25rem; }
+p { margin: 0 0 1.1em; }
+a { color: var(--sage-dark); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.narrow { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+/* Banner / Nav (same as other pages) */
+.banner { background: var(--navy); color: var(--cream-soft); padding: 14px 0; font-size: .9rem; text-align: center; letter-spacing: .02em; }
+.banner .sage { color: var(--sage); font-weight: 600; }
+.banner a { color: var(--cream-soft); text-decoration: underline; }
+nav.site { padding: 24px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; }
+nav.site .brand { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .98rem; font-weight: 800; letter-spacing: .08em; color: var(--ink); border-bottom: 3px solid var(--sage); padding-bottom: 2px; text-decoration: none; }
+nav.site ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; font-size: .92rem; }
+nav.site ul a { color: var(--ink-soft); text-decoration: none; }
+nav.site ul a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding: 70px 0 30px; }
+.hero h1 { max-width: 22ch; }
+.hero .sub { font-size: 1.15rem; max-width: 65ch; color: var(--ink-soft); margin-top: 1.2em; }
+.hero .meta-row {
+  display: flex; flex-wrap: wrap; gap: 22px;
+  margin-top: 1.4em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: .98rem;
+  color: var(--ink);
+}
+.hero .meta-row .pill {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  padding: 10px 16px;
+  border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px;
+  box-shadow: var(--shadow);
+}
+.hero .meta-row .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); }
+
+/* Subscribe block */
+.subscribe-block {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-radius: 16px;
+  padding: 48px 40px;
+  margin: 50px auto 0;
+  max-width: 760px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.subscribe-block .eyebrow { color: var(--sage); }
+.subscribe-block h2 { color: var(--cream-soft); max-width: 22ch; margin-left: auto; margin-right: auto; }
+.subscribe-block p { color: #D7D0C6; max-width: 56ch; margin-left: auto; margin-right: auto; }
+.subscribe-block .form-area {
+  background: rgba(245,240,235,.06);
+  border: 1px dashed rgba(245,240,235,.3);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin-top: 20px;
+  font-size: .9rem;
+  color: #D7D0C6;
+  text-align: left;
+}
+.subscribe-block .form-area code { background: rgba(0,0,0,.3); padding: 2px 6px; border-radius: 4px; color: var(--sage); }
+.subscribe-block .micro { font-size: .85rem; color: #C6BEB3; margin-top: 14px; }
+
+/* Sections */
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--rule);
+}
+section:last-of-type { border-bottom: none; }
+section.tinted { background: var(--cream-soft); }
+section.dark { background: var(--navy); color: var(--cream-soft); border-bottom: none; }
+section.dark h2 { color: var(--cream-soft); }
+section.dark p { color: #D7D0C6; }
+section.dark .eyebrow { color: var(--sage); }
+
+/* What's inside */
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+.inside-card {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 28px 26px;
+  box-shadow: var(--shadow);
+}
+.inside-card h3 { margin-bottom: .4em; font-size: 1.1rem; }
+.inside-card p { font-size: .94rem; color: var(--ink-soft); margin-bottom: 0; }
+
+/* Featured posts */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+.post-card {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 30px 28px 32px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform .15s ease;
+}
+.post-card:hover { transform: translateY(-2px); color: var(--ink); }
+.post-card .meta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.post-card h3 { margin-bottom: .4em; line-height: 1.25; font-size: 1.2rem; }
+.post-card p { font-size: .95rem; color: var(--ink-soft); margin-bottom: 14px; }
+.post-card .read-link {
+  margin-top: auto;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: var(--sage-dark);
+  font-size: .9rem;
+}
+
+/* Archive CTA */
+.archive-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+.btn {
+  display: inline-block;
+  background: var(--sage);
+  color: var(--cream-soft);
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { background: var(--sage-dark); color: var(--cream-soft); transform: translateY(-1px); }
+
+/* Footer */
+footer { background: var(--navy); color: #C6BEB3; padding: 50px 0; font-size: .9rem; }
+footer .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+@media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+footer h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-soft); font-weight: 700; margin-bottom: 14px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { margin-bottom: 8px; }
+footer a { color: #C6BEB3; text-decoration: none; }
+footer a:hover { color: var(--cream-soft); }
+footer .colophon { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .82rem; color: #8A8278; }
+
+
+@media (max-width: 720px) {
+  nav.site ul { display: none; }
+  .hero { padding: 50px 0 20px; }
+  section { padding: 60px 0; }
+  .subscribe-block { padding: 36px 28px; }
+}
+</style>
+<!-- SEO and social sharing -->
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/newsletter/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/newsletter/" />
+<meta property="og:title" content="Newsletter · Cleaning Company Blueprint" />
+<meta property="og:description" content="One email a week from Vic and Jen on building a profitable cleaning business. Real numbers, real stories, and the free 22-Day Master Checklist." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Newsletter · Cleaning Company Blueprint" />
+<meta name="twitter:description" content="One email a week from Vic and Jen on building a profitable cleaning business. Real numbers, real stories, and the free 22-Day Master Checklist." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com","logo":"https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg","description":"Coaching brand for cleaning business owners, founded by sisters Vic and Jen Westcott who scaled Oak Bay Clean to $2.8M in four years.","founder":[{"@type":"Person","name":"Victoria Westcott","jobTitle":"Co-founder"},{"@type":"Person","name":"Jen Westcott","jobTitle":"Co-founder"}],"sameAs":["https://www.youtube.com/@CleaningCompanyBlueprint","https://stan.store/cleaningcompanyblueprint","https://cleaning-company-blueprint.beehiiv.com"]}
+</script>
+
+</head>
+<body>
+
+<!-- Top banner -->
+<div class="banner">
+  Free webinar Wednesday July 1 at 12pm Pacific <span class="sage">·</span> <a href="/webinar-july-1">The 4 stages of building a peaceful cleaning business →</a>
+</div>
+
+<!-- Nav -->
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/book-a-call">Book a call</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">The Monday Newsletter</span>
+    <h1>One email a week. Real numbers, real stories, real questions.</h1>
+    <p class="sub">
+      Vic and Jen send one email every Monday morning. The actual numbers from Oak Bay Clean, the lessons from inside the Inner Circle, and the questions members and prospects are bringing to the room that week.
+    </p>
+    <div class="meta-row">
+      <span class="pill"><span class="dot"></span>Free</span>
+      <span class="pill"><span class="dot"></span>Mondays</span>
+      <span class="pill"><span class="dot"></span>22-Day Master Checklist included</span>
+    </div>
+
+    <!-- Subscribe block -->
+    <div class="subscribe-block">
+      <span class="eyebrow">Get the next issue</span>
+      <h2>Join the Monday newsletter and get the master checklist.</h2>
+      <p>Drop your email and we'll send the 22-Day Cleaning Business Master Checklist along with the Monday newsletter. One email a week. Unsubscribe anytime.</p>
+
+      <div style="margin-top:24px;">
+        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="0e90e802-6b1a-4e13-a47a-c6d4cbd29caa"></script>
+      </div>
+
+      <p class="micro">
+        We never share your email. Read past issues below.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- What's inside -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What's in every issue</span>
+    <h2 style="max-width:22ch;">The Monday newsletter is short, useful, and worth the inbox space.</h2>
+
+    <div class="inside-grid">
+      <div class="inside-card">
+        <h3>Real numbers</h3>
+        <p>Revenue, margins, cleaner pay rates, marketing spend, and the actual math behind running Oak Bay Clean.</p>
+      </div>
+      <div class="inside-card">
+        <h3>Real stories</h3>
+        <p>What members of the Inner Circle are working on this week. The wins, the walls, and the pivots in real time.</p>
+      </div>
+      <div class="inside-card">
+        <h3>The questions</h3>
+        <p>The questions Vic and Jen are getting from members and discovery calls, with the answers they actually give.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured posts -->
+<section class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">A few favourites to start with</span>
+    <h2 style="max-width:24ch;">Read before you subscribe.</h2>
+    <p class="narrow" style="margin-left:0;max-width:60ch;">
+      Two issues that give you a feel for what the Monday email is like. The full archive lives on Beehiiv.
+    </p>
+
+    <div class="posts">
+      <a class="post-card" href="https://cleaning-company-blueprint.beehiiv.com/p/780k-with-28-margins-just-jen-and-me" target="_blank" rel="noopener noreferrer">
+        <div class="meta">Real numbers</div>
+        <h3>$780K with 28% margins, just Jen and me.</h3>
+        <p>Vic breaks down the actual revenue and margin numbers from a year of Oak Bay Clean, when it was just two sisters running the whole thing.</p>
+        <div class="read-link">Read it on Beehiiv →</div>
+      </a>
+      <a class="post-card" href="https://cleaning-company-blueprint.beehiiv.com/p/just-a-quick-wipe-and-other-realtor-red-flags" target="_blank" rel="noopener noreferrer">
+        <div class="meta">Client filtering</div>
+        <h3>"Just a quick wipe" and other realtor red flags.</h3>
+        <p>Why some clients are signals, not customers. The phrases that tell you to run, and the ones that tell you you've found a keeper.</p>
+        <div class="read-link">Read it on Beehiiv →</div>
+      </a>
+    </div>
+
+    <div class="archive-cta">
+      <a href="https://cleaning-company-blueprint.beehiiv.com" target="_blank" rel="noopener noreferrer" class="btn">Browse the full archive on Beehiiv →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="dark">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Mondays are easier with this in the inbox</span>
+    <h2 style="max-width:26ch;margin-left:auto;margin-right:auto;">Get the master checklist and the Monday newsletter.</h2>
+    <p style="max-width:55ch;margin-left:auto;margin-right:auto;color:#D7D0C6;">
+      Drop your email and we'll send the 22-Day Master Checklist right away, then one email every Monday from there.
+    </p>
+    <a href="#top" onclick="document.querySelector('.subscribe-block').scrollIntoView({behavior:'smooth'});return false;" class="btn" style="margin-top:24px;">Subscribe →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+          <li><a href="/name-my-cleaning-company">Name my cleaning company</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

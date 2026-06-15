@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Book a call · Cleaning Company Blueprint</title>
+<meta name="description" content="Book a free 30-minute discovery call with Vic. Honest answers about starting a cleaning business, the Inner Circle, or whatever's next for your business." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --cream: #F5F0EB;
+  --cream-soft: #FAF8F5;
+  --sage: #6BA5A0;
+  --sage-dark: #558580;
+  --taupe: #B09080;
+  --ink: #3A2E2A;
+  --ink-soft: #5C4F4A;
+  --navy: #0A1628;
+  --rule: #E8E0D6;
+  --shadow: 0 4px 20px rgba(58,46,42,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.12;
+  letter-spacing: -.015em;
+  margin: 0 0 .4em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1.1em; }
+a { color: var(--sage-dark); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.narrow { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+/* Top banner */
+.banner {
+  background: var(--navy);
+  color: var(--cream-soft);
+  padding: 14px 0;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .02em;
+}
+.banner .sage { color: var(--sage); font-weight: 600; }
+
+/* Nav */
+nav.site {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.site .brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .98rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--ink);
+  border-bottom: 3px solid var(--sage);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+nav.site ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+  font-size: .92rem;
+}
+nav.site ul a { color: var(--ink-soft); text-decoration: none; }
+nav.site ul a:hover { color: var(--ink); }
+
+/* Hero */
+.hero { padding: 70px 0 50px; }
+.hero h1 { max-width: 22ch; }
+.hero .sub {
+  font-size: 1.15rem; max-width: 65ch; color: var(--ink-soft); margin-top: 1.2em;
+}
+.hero .meta-row {
+  display: flex; flex-wrap: wrap; gap: 22px;
+  margin-top: 1.4em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: .98rem;
+  color: var(--ink);
+}
+.hero .meta-row .pill {
+  background: var(--cream-soft);
+  border: 1px solid var(--rule);
+  padding: 10px 16px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow);
+}
+.hero .meta-row .pill .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--sage);
+}
+
+/* Sections */
+section {
+  padding: 70px 0;
+  border-bottom: 1px solid var(--rule);
+}
+section:last-of-type { border-bottom: none; }
+section.tinted { background: var(--cream-soft); }
+section.dark {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-bottom: none;
+}
+section.dark h2 { color: var(--cream-soft); }
+section.dark p { color: #D7D0C6; }
+section.dark .eyebrow { color: var(--sage); }
+
+/* What this call is */
+.use-cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px 36px;
+  margin-top: 30px;
+}
+.use-case {
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+.use-case h3 {
+  font-size: 1.05rem;
+  margin-bottom: .4em;
+}
+.use-case p { font-size: .96rem; margin-bottom: 0; }
+
+/* Calendly embed wrapper */
+.calendly-section {
+  background: var(--cream-soft);
+  padding: 50px 0;
+}
+.calendly-wrap {
+  max-width: 980px; margin: 0 auto; padding: 0 28px;
+}
+.calendly-header { text-align: center; margin-bottom: 30px; }
+.calendly-header h2 { margin-bottom: 0.3em; }
+.calendly-header p { color: var(--ink-soft); max-width: 50ch; margin: 0 auto; }
+
+.calendly-embed-wrap {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 700px;
+}
+.calendly-inline-widget {
+  width: 100%;
+  min-width: 320px;
+  height: 700px;
+}
+
+/* FAQ */
+.faq { max-width: 760px; margin: 30px auto 0; }
+.faq details {
+  border-top: 1px solid var(--rule);
+  padding: 18px 0;
+}
+.faq details:last-child { border-bottom: 1px solid var(--rule); }
+.faq summary {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  position: absolute; right: 0; top: 0;
+  font-size: 1.4rem; color: var(--sage-dark);
+}
+.faq details[open] summary::after { content: "-"; }
+.faq details[open] p { margin-top: 12px; }
+
+/* Footer */
+footer { background: var(--navy); color: #C6BEB3; padding: 50px 0; font-size: .9rem; }
+footer .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+@media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+footer h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-soft); font-weight: 700; margin-bottom: 14px; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { margin-bottom: 8px; }
+footer a { color: #C6BEB3; text-decoration: none; }
+footer a:hover { color: var(--cream-soft); }
+footer .colophon { margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .82rem; color: #8A8278; text-align: center; }
+
+
+@media (max-width: 720px) {
+  nav.site ul { display: none; }
+  .hero { padding: 50px 0 30px; }
+  section { padding: 50px 0; }
+  .calendly-inline-widget { height: 650px; }
+}
+</style>
+<!-- SEO and social sharing -->
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/book-a-call/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/book-a-call/" />
+<meta property="og:title" content="Book a call · Cleaning Company Blueprint" />
+<meta property="og:description" content="Book a free 30-minute discovery call with Vic. Honest answers about starting a cleaning business, the Inner Circle, or whatever's next for your business." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Book a call · Cleaning Company Blueprint" />
+<meta name="twitter:description" content="Book a free 30-minute discovery call with Vic. Honest answers about starting a cleaning business, the Inner Circle, or whatever's next for your business." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cleaning Company Blueprint",
+  "url": "https://cleaningcompanyblueprint.com",
+  "logo": "https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg",
+  "description": "Coaching brand for cleaning business owners, founded by sisters Vic and Jen Westcott who scaled Oak Bay Clean to $2.8M in four years.",
+  "founder": [
+    {"@type": "Person", "name": "Victoria Westcott", "jobTitle": "Co-founder"},
+    {"@type": "Person", "name": "Jen Westcott", "jobTitle": "Co-founder"}
+  ],
+  "sameAs": [
+    "https://www.youtube.com/@CleaningCompanyBlueprint",
+    "https://stan.store/cleaningcompanyblueprint",
+    "https://cleaning-company-blueprint.beehiiv.com"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "30 minutes. We start on time and end on time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there really no charge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the discovery call is free. The paid 1:1 calls are $250 an hour and are booked separately through stan.store/CleaningCompanyBlueprint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who runs the call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vic. All discovery calls are 1:1 with Vic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I prep anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Show up with the actual question on your mind. If you have specific numbers about your business, have those handy."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Top banner -->
+<div class="banner">
+  Got a question that needs a real answer? <span class="sage">·</span> Book a 30-minute discovery call. Free.
+</div>
+
+<!-- Nav -->
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="#book">Book a call</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Discovery Call</span>
+    <h1>Book a 30-minute call with Vic.</h1>
+    <p class="sub">
+      For people who've watched the YouTube channel, read the newsletter, or come across the Inner Circle and have a real question they'd like a real answer to. No pitch, no upsell, no pressure. Just a conversation about where you are and what makes sense next.
+    </p>
+    <div class="meta-row">
+      <span class="pill"><span class="dot"></span>30 minutes</span>
+      <span class="pill"><span class="dot"></span>Free</span>
+      <span class="pill"><span class="dot"></span>Zoom</span>
+    </div>
+  </div>
+</header>
+
+<!-- What this call covers -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What this call is for</span>
+    <h2>Specific questions, honest answers, the right next step.</h2>
+    <p class="narrow" style="margin-left:0;">
+      The discovery call is for people who already know they want to start or grow a cleaning business and have a question that the public content hasn't answered. Bring the question. Vic will give the most useful answer she has, even if that answer is "this is the wrong service for what you're describing."
+    </p>
+
+    <div class="use-cases">
+      <div class="use-case">
+        <h3>You're thinking about the Inner Circle</h3>
+        <p>You've read the page, you're 70% sure it's a fit, and you want a real human to answer the last 30%. This call gets you to a yes or a no with confidence.</p>
+      </div>
+      <div class="use-case">
+        <h3>You're considering a 1:1 with Vic or Jen</h3>
+        <p>The 1:1 calls are $250 an hour, focused on hiring with Vic or branding and SEO with Jen. The discovery call is the no-cost version of "is this the right fit, and which one of us should you talk to."</p>
+      </div>
+      <div class="use-case">
+        <h3>You're stuck on something specific</h3>
+        <p>A pricing decision, a hiring call, a marketing channel that isn't working, a market question. Bring it. We've probably seen a version of it inside the Inner Circle in the last six months.</p>
+      </div>
+      <div class="use-case">
+        <h3>You're not sure which CCB resource fits</h3>
+        <p>The ebook, the Inner Circle, the YouTube channel, a 1:1, the digital products. They all do different things. The discovery call is the fastest way to figure out which one matches where you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Calendly embed -->
+<div class="calendly-section" id="book">
+  <div class="calendly-wrap">
+    <div class="calendly-header">
+      <span class="eyebrow">Pick a time</span>
+      <h2>The calendar's live below.</h2>
+      <p>Choose any 30-minute slot that works. There's a short intake form on Calendly so Vic can prep for the call. After that you'll get a confirmation email with the Zoom link.</p>
+    </div>
+
+    <div class="calendly-embed-wrap">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/cleaningcompanyblueprint/discovery-call?primary_color=6ba5a0" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+    </div>
+
+    <p style="text-align:center;font-size:.92rem;color:var(--ink-soft);margin-top:24px;">
+      Calendar not loading? <a href="https://calendly.com/cleaningcompanyblueprint/discovery-call" target="_blank" rel="noopener noreferrer">Open the booking page in a new tab.</a>
+    </p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;">A few quick details</span>
+    <h2 style="text-align:center;">What to expect.</h2>
+
+    <div class="faq">
+      <details>
+        <summary>How long is the call?</summary>
+        <p>30 minutes. We start on time and end on time.</p>
+      </details>
+      <details>
+        <summary>Is there really no charge?</summary>
+        <p>Yes, the discovery call is free. The paid 1:1 calls are $250 an hour and are booked separately through stan.store/CleaningCompanyBlueprint. The discovery call exists so you can decide if a paid call, the Inner Circle, or something else is the right fit before spending money.</p>
+      </details>
+      <details>
+        <summary>Who runs the call?</summary>
+        <p>Vic. All discovery calls are 1:1 with Vic. If your question is specifically about branding, websites, or SEO (Jen's wheelhouse), Vic will route you to Jen for a paid 1:1 if it makes sense after the discovery call.</p>
+      </details>
+      <details>
+        <summary>What's on the booking form?</summary>
+        <p>A few short questions about your situation so Vic can prep before the call: where you are with your business, what you're hoping to figure out, what your goals look like, and what's been holding you back. The form takes about three minutes. It's there so the 30 minutes on Zoom go straight to the useful conversation instead of the catch-up.</p>
+      </details>
+      <details>
+        <summary>Should I prep anything else?</summary>
+        <p>Show up with the actual question on your mind. If you have specific numbers about your business (revenue, hours, current clients), have those handy. If you don't, that's fine too.</p>
+      </details>
+      <details>
+        <summary>What happens after the call?</summary>
+        <p>If something we offer is the right fit, we'll point you to it. If something else is the right fit, we'll tell you that instead. There's no automated email sequence, no high-pressure follow-up. We treat these calls as the kind of conversation we'd have with someone who reached out for help, not as a sales funnel.</p>
+      </details>
+      <details>
+        <summary>Can I reschedule or cancel?</summary>
+        <p>Yes. The confirmation email has a reschedule and a cancel link. Use them anytime. Just please don't no-show, since the slots fill up and someone else could have used it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="dark">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Ready to talk?</span>
+    <h2 style="max-width:24ch;margin-left:auto;margin-right:auto;">Pick a time and we'll see you on Zoom.</h2>
+    <p style="max-width:55ch;margin-left:auto;margin-right:auto;color:#D7D0C6;">
+      30 minutes. No charge. Whatever question you've been sitting on, this is the room to bring it to.
+    </p>
+    <a href="#book" style="display:inline-block;background:var(--sage);color:var(--cream-soft);padding:16px 30px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;text-decoration:none;margin-top:24px;">
+      Pick a time →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/videos">Videos</a></li>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+          <li><a href="/name-my-cleaning-company">Name my cleaning company</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

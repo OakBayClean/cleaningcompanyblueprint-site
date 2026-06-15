@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog | Cleaning Company Blueprint</title>
+<meta name="description" content="Practical advice on starting and growing a cleaning business from Victoria and Jen. Real numbers, real stories, no fluff." />
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/blog/" />
+<meta property="og:title" content="Blog | Cleaning Company Blueprint" />
+<meta property="og:description" content="Practical advice on starting and growing a cleaning business from Victoria and Jen." />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/blog/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{--cream:#F5F0EB;--cream-soft:#FAF8F5;--sage:#6BA5A0;--sage-dark:#558580;--taupe:#B09080;--ink:#3A2E2A;--ink-soft:#5C4F4A;--navy:#0A1628;--rule:#E8E0D6;--shadow:0 4px 20px rgba(58,46,42,.08)}
+*{box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);margin:0;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;color:var(--ink);line-height:1.18;letter-spacing:-.015em;margin:0 0 .4em}
+h1{font-size:clamp(2rem,4vw,3.2rem)}
+h2{font-size:clamp(1.35rem,2.5vw,1.85rem);margin-top:2.4em}
+h3{font-size:1.2rem;margin-top:2em}
+p{margin:0 0 1.3em}
+a{color:var(--sage-dark);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+ul,ol{margin:0 0 1.3em;padding-left:1.5em}
+li{margin-bottom:.55em}
+hr{border:none;border-top:1px solid var(--rule);margin:2.5em 0}
+blockquote{border-left:3px solid var(--sage);margin:1.5em 0;padding:.5em 0 .5em 1.2em;color:var(--ink-soft)}
+blockquote p{margin:0}
+strong{font-weight:600}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+.narrow{max-width:760px;margin:0 auto;padding:0 28px}
+.eyebrow{font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe);margin-bottom:18px;display:inline-block}
+.banner{background:var(--navy);color:var(--cream-soft);padding:14px 0;font-size:.9rem;text-align:center;letter-spacing:.02em}
+.banner .sage{color:var(--sage);font-weight:600}
+.banner a{color:var(--cream-soft);text-decoration:underline}
+nav.site{padding:24px 0;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center}
+nav.site .brand{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.14em;color:var(--ink);text-decoration:none}
+nav.site ul{list-style:none;margin:0;padding:0;display:flex;gap:28px}
+nav.site ul a{color:var(--ink-soft);text-decoration:none;font-size:.9rem}
+nav.site ul a:hover{color:var(--ink)}
+.post-header{padding:64px 0 48px;border-bottom:1px solid var(--rule);margin-bottom:56px}
+.post-meta{font-size:.88rem;color:var(--ink-soft);margin-bottom:0;margin-top:20px}
+.post-subtitle{font-size:1.2rem;color:var(--ink-soft);font-weight:400;margin-top:16px;line-height:1.55}
+.post-body{padding-bottom:80px}
+.post-body>*{max-width:680px}
+.cta-box{background:var(--navy);color:var(--cream-soft);padding:44px 40px;border-radius:8px;margin:56px 0;max-width:680px}
+.cta-box h3{color:var(--cream-soft);font-size:1.35rem;margin-bottom:12px;margin-top:0}
+.cta-box p{color:rgba(250,248,245,.8);margin-bottom:24px}
+.btn{display:inline-block;background:var(--sage);color:#fff;padding:13px 28px;border-radius:6px;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.95rem}
+.btn:hover{background:var(--sage-dark);color:#fff}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;padding:48px 0 80px}
+.blog-card{background:#fff;border-radius:8px;padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .18s,box-shadow .18s}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(58,46,42,.13)}
+.blog-card .card-date{font-size:.82rem;color:var(--taupe);margin-bottom:10px;font-weight:500}
+.blog-card h3{font-size:1.1rem;margin-bottom:10px;color:var(--ink)}
+.blog-card p{font-size:.88rem;color:var(--ink-soft);margin:0;line-height:1.55;flex-grow:1}
+.blog-card .read-more{font-size:.85rem;font-weight:600;color:var(--sage-dark);margin-top:18px}
+footer.site{background:var(--navy);color:rgba(250,248,245,.6);padding:48px 0;font-size:.88rem}
+footer.site a{color:rgba(250,248,245,.7)}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px}
+.footer-brand{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;color:var(--cream-soft);font-size:.88rem;letter-spacing:.12em;text-decoration:none;display:block;margin-bottom:12px}
+footer.site ul{list-style:none;padding:0;margin:8px 0 0}
+footer.site li{margin-bottom:8px}
+footer.site strong{color:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:700px){nav.site ul{display:none}.footer-grid{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}.cta-box{padding:32px 24px}.narrow{padding:0 20px}}
+</style>
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"Blog",
+  "name":"Cleaning Company Blueprint Blog",
+  "url":"https://cleaningcompanyblueprint.com/blog/",
+  "description":"Practical advice on starting and growing a cleaning business.",
+  "publisher":{"@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com"}
+}</script>
+</head>
+<body>
+<div class="banner">
+  <div class="wrap">Join the <span class="sage">Inner Circle</span> &mdash; weekly Zoom accountability for cleaning business owners. <a href="/inner-circle">Learn more &rarr;</a></div>
+</div>
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/book-a-call">Book a call</a></li>
+    </ul>
+  </nav>
+  <div style="padding:64px 0 32px;">
+    <span class="eyebrow">Cleaning Company Blueprint</span>
+    <h1 style="font-size:clamp(2rem,4vw,3.2rem);max-width:680px;">How to start and grow a cleaning business</h1>
+    <p style="max-width:600px;font-size:1.1rem;color:var(--ink-soft);margin-top:16px;">Victoria and Jen built Oak Bay Clean to $2.8M in four years. Every week they share what actually works. Start here.</p>
+  </div>
+  <div class="blog-grid">
+    <a class="blog-card" href="/blog/the-one-question-i-get-asked-more-than-any-other/">
+      <div class="card-date">June 8, 2026</div>
+      <h3>The one question I get asked more than any other</h3>
+      <p>What should I name my cleaning business? My answer is so simple that people do not believe it can possibly be that easy.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/what-jenna-and-isaac-decided-to-do-at-80k-month/">
+      <div class="card-date">June 1, 2026</div>
+      <h3>What Jenna and Isaac decided to do at $80K/month</h3>
+      <p>Isaac was a high school math teacher. Jenna was a physician assistant. They hit $80K/month with their Columbus cleaning company. Here's what they're sitting with now.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/only-4-percent-of-us-do-this-thing/">
+      <div class="card-date">May 25, 2026</div>
+      <h3>Only 4% of us do this thing</h3>
+      <p>My sister Jen and I keep coming back to this stat: roughly 4% of adults own a business that employs other people.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/im-not-replying-to-this-email/">
+      <div class="card-date">May 18, 2026</div>
+      <h3>I'm not replying to this email. Here's why.</h3>
+      <p>8 red flags. One high-maintenance lead. The anatomy of a Nancy-email.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/the-customer-journey-starts-at-question-one/">
+      <div class="card-date">May 11, 2026</div>
+      <h3>The customer journey starts at question one. Here's what Joyce does at question four.</h3>
+      <p>If the person asks more than 3 questions, they're probably not the client for you.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/780k-with-28-margins-just-jen-and-me/">
+      <div class="card-date">April 27, 2026</div>
+      <h3>$780K with 28% margins. Just Jen and me.</h3>
+      <p>It's easier to find 100 ideal clients than 1,000 nightmare clients. Most cleaning business owners do the opposite.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/i-m-working-so-hard-why-isn-t-anything-moving/">
+      <div class="card-date">April 25, 2026</div>
+      <h3>I'm working so hard. Why isn't anything moving?</h3>
+      <p>Until you have your first Jordan, getting her is the only problem worth solving.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/jordan-s-customer-journey-and-why-it-matters/">
+      <div class="card-date">April 17, 2026</div>
+      <h3>Jordan's Customer Journey (and why it matters more than any ad spend)</h3>
+      <p>A $362.25 booking came in while I was writing this. Here's the system behind it.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/jordan-vs-nancy-who-is-your-cleaning-business-actually-for/">
+      <div class="card-date">April 8, 2026</div>
+      <h3>Jordan vs. Nancy: Who Is Your Cleaning Business Actually For?</h3>
+      <p>One persona you build for. One you design around. Here's how to figure out which is which in your city.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/just-a-quick-wipe-and-other-realtor-red-flags/">
+      <div class="card-date">April 6, 2026</div>
+      <h3>Just a quick wipe" (and other realtor red flags)</h3>
+      <p>The same approach that still works four years later.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/the-people-already-in-your-room/">
+      <div class="card-date">March 26, 2026</div>
+      <h3>The people already in your room</h3>
+      <p>Netflix filmmakers. A fashion designer. Two guys who met at a poker table...</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/what-actually-grows-your-cleaning-business/">
+      <div class="card-date">March 9, 2026</div>
+      <h3>What actually grows your cleaning business...</h3>
+      <p>We're breaking it down live on March 23rd.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/the-four-stages-of-a-cleaning-business-which-one-are-you-in/">
+      <div class="card-date">March 1, 2026</div>
+      <h3>The Four Stages of a Cleaning Business: Which One Are You In?</h3>
+      <p>Most owners are working on the wrong one.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/is-this-actually-going-to-work-for-me/">
+      <div class="card-date">February 23, 2026</div>
+      <h3>Is this actually going to work for me?</h3>
+      <p>That question shows up for everyone. Here's what to do with it.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/the-hiring-post-that-started-a-conversation-worth-sharing/">
+      <div class="card-date">February 23, 2026</div>
+      <h3>The Hiring Post That Started a Conversation Worth Sharing</h3>
+      <p>You can't get 5-star reviews with no one to send.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/she-had-a-10k-month-in-2020-then-lost-it-for-four-years/">
+      <div class="card-date">February 20, 2026</div>
+      <h3>She had a $10K month in 2020. Then lost it for four years.</h3>
+      <p>She finally figured out what went wrong.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/the-moment-we-stopped-trying-to-grow-fast/">
+      <div class="card-date">February 19, 2026</div>
+      <h3>The moment we stopped trying to grow fast</h3>
+      <p>His reviews told the whole story.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/to-make-millions-think-smaller/">
+      <div class="card-date">February 19, 2026</div>
+      <h3>To make millions, think smaller</h3>
+      <p>I know. Bear with me.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/i-did-everything-why-am-i-still-not-getting-clients/">
+      <div class="card-date">February 13, 2026</div>
+      <h3>“I Did Everything... Why Am I Still Not Getting Clients?”</h3>
+      <p>Most new cleaning businesses make the same mistake.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/why-building-your-business-in-community-is-easier/">
+      <div class="card-date">February 9, 2026</div>
+      <h3>Why Building Your Business in Community is Easier</h3>
+      <p>Recurring clients, hiring, and the power of not building alone</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/how-nakita-built-a-cleaning-business-in-2026/">
+      <div class="card-date">February 5, 2026</div>
+      <h3>How Nakita Built A Cleaning Business in 2026</h3>
+      <p>From Layoff to $10K+ Months</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/a-calm-way-to-build-while-you-still-have-a-job/">
+      <div class="card-date">February 4, 2026</div>
+      <h3>A Calm Way to Build While You Still Have a Job</h3>
+      <p>What to pay attention to when you want options later</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+    <a class="blog-card" href="/blog/let-it-be-boring/">
+      <div class="card-date">February 4, 2026</div>
+      <h3>Let it be boring.</h3>
+      <p>I stopped chasing exciting ideas and started asking one better question. It changed everything.</p>
+      <span class="read-more">Read &rarr;</span>
+    </a>
+  </div>
+</div>
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a class="footer-brand" href="/">CLEANING COMPANY BLUEPRINT</a><p>Two sisters. One cleaning business. The playbook they wish they had.</p></div>
+      <div><strong>Learn</strong><ul><li><a href="/videos">YouTube Videos</a></li><li><a href="/blog">Blog</a></li><li><a href="/newsletter">Newsletter</a></li><li><a href="/products">Free Checklist</a></li></ul></div>
+      <div><strong>Community</strong><ul><li><a href="/inner-circle">Inner Circle</a></li><li><a href="/about">About Vic &amp; Jen</a></li><li><a href="/book-a-call">Book a call</a></li></ul></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Name My Cleaning Company · Free Market and Name Report · Cleaning Company Blueprint</title>
+<meta name="description" content="Find the best name for your cleaning company and see if your local market is ready. Free instant report with real competitor data, ranked business names, and pricing guidance." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --cream: #F5F0EB;
+  --cream-soft: #FAF8F5;
+  --sage: #6BA5A0;
+  --sage-dark: #558580;
+  --taupe: #B09080;
+  --ink: #3A2E2A;
+  --ink-soft: #5C4F4A;
+  --navy: #0A1628;
+  --rule: #E8E0D6;
+  --shadow: 0 4px 20px rgba(58,46,42,.08);
+}
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.12;
+  letter-spacing: -.015em;
+  margin: 0 0 .4em;
+}
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.6rem, 2.8vw, 2.3rem); }
+h3 { font-size: 1.25rem; }
+p { margin: 0 0 1.1em; }
+a { color: var(--sage-dark); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+.narrow { max-width: 760px; margin: 0 auto; }
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+/* Top banner */
+.banner {
+  background: var(--navy);
+  color: var(--cream-soft);
+  padding: 14px 0;
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .02em;
+}
+.banner .sage { color: var(--sage); font-weight: 600; }
+.banner a { color: var(--cream-soft); text-decoration: underline; }
+
+/* Nav */
+nav.site {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.site .brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .98rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: var(--ink);
+  border-bottom: 3px solid var(--sage);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+nav.site ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+  font-size: .92rem;
+}
+nav.site ul a { color: var(--ink-soft); text-decoration: none; }
+nav.site ul a:hover { color: var(--ink); }
+
+/* Hero */
+.hero {
+  padding: 80px 0 60px;
+  background: var(--navy);
+  color: var(--cream-soft);
+}
+.hero .eyebrow { color: var(--sage); }
+.hero h1 { color: var(--cream-soft); max-width: 22ch; }
+.hero .sub {
+  font-size: 1.2rem;
+  max-width: 60ch;
+  color: #D7D0C6;
+  margin-top: 1.2em;
+  margin-bottom: 0;
+}
+
+/* CTA button */
+.btn {
+  display: inline-block;
+  background: var(--sage);
+  color: var(--cream-soft);
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { background: var(--sage-dark); color: var(--cream-soft); transform: translateY(-1px); }
+.btn-outline {
+  display: inline-block;
+  border: 2px solid var(--sage);
+  color: var(--sage-dark);
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: background .15s ease, color .15s ease;
+}
+.btn-outline:hover { background: var(--sage); color: var(--cream-soft); }
+
+/* What you get grid */
+section { padding: 70px 0; border-bottom: 1px solid var(--rule); }
+section:last-of-type { border-bottom: none; }
+section.tinted { background: var(--cream-soft); }
+section.dark {
+  background: var(--navy);
+  color: var(--cream-soft);
+  border-bottom: none;
+}
+section.dark h2 { color: var(--cream-soft); }
+section.dark p { color: #D7D0C6; }
+section.dark .eyebrow { color: var(--sage); }
+
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+@media (max-width: 720px) { .what-grid { grid-template-columns: 1fr; } }
+.what-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 30px 28px;
+  box-shadow: var(--shadow);
+}
+.what-card .icon {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.what-card h3 { margin-bottom: 8px; }
+.what-card p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
+
+/* How it works */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+  max-width: 700px;
+}
+.step {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--sage);
+  color: var(--cream-soft);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.step-body h3 { margin-bottom: 6px; }
+.step-body p { margin: 0; color: var(--ink-soft); }
+
+/* Proof bar */
+.proof {
+  background: var(--cream-soft);
+  border-radius: 14px;
+  padding: 36px 36px;
+  border: 1px solid var(--rule);
+  margin-top: 48px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+@media (max-width: 720px) { .proof { flex-direction: column; gap: 20px; } }
+.proof-stat { text-align: center; }
+.proof-stat .number {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--sage-dark);
+  display: block;
+  line-height: 1;
+}
+.proof-stat .label {
+  font-size: .88rem;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+.proof-divider {
+  width: 1px;
+  background: var(--rule);
+  align-self: stretch;
+}
+@media (max-width: 720px) { .proof-divider { display: none; } }
+.proof-copy { flex: 1; }
+.proof-copy p { color: var(--ink-soft); font-size: .97rem; margin: 0; }
+
+/* Footer */
+footer {
+  background: var(--navy);
+  color: #C6BEB3;
+  padding: 50px 0;
+  font-size: .9rem;
+}
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 720px) { footer .footer-grid { grid-template-columns: 1fr 1fr; } }
+footer h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: .82rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--cream-soft); font-weight: 700; margin-bottom: 14px;
+}
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer ul li { margin-bottom: 8px; }
+footer a { color: #C6BEB3; text-decoration: none; }
+footer a:hover { color: var(--cream-soft); }
+footer .colophon {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  font-size: .82rem;
+  color: #8A8278;
+}
+
+@media (max-width: 720px) {
+  nav.site ul { display: none; }
+  .hero { padding: 50px 0 40px; }
+  section { padding: 50px 0; }
+}
+</style>
+<link rel="canonical" href="https://cleaningcompanyblueprint.com/name-my-cleaning-company/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cleaningcompanyblueprint.com/name-my-cleaning-company/" />
+<meta property="og:title" content="Name My Cleaning Company · Free Market and Name Report" />
+<meta property="og:description" content="Find the best name for your cleaning company and see if your local market is ready. Free instant report with real competitor data, ranked business names, and pricing guidance." />
+<meta property="og:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<meta property="og:site_name" content="Cleaning Company Blueprint" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Name My Cleaning Company · Free Market and Name Report" />
+<meta name="twitter:description" content="Find the best name for your cleaning company and see if your local market is ready. Free instant report with real competitor data, ranked business names, and pricing guidance." />
+<meta name="twitter:image" content="https://cleaningcompanyblueprint.com/images/vic-and-jen.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Name My Cleaning Company","url":"https://namemycleaningcompany.com","description":"Free market and business name report for residential cleaning companies. Real competitor data, ranked business names with domain availability, and local pricing guidance.","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"creator":{"@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com"}}</script>
+</head>
+<body>
+
+<!-- Top banner -->
+<div class="banner">
+  Free webinar Wednesday July 1 at 12pm Pacific <span class="sage">·</span> <a href="/webinar-july-1">The 4 stages of building a peaceful cleaning business →</a>
+</div>
+
+<!-- Nav -->
+<div class="wrap">
+  <nav class="site">
+    <a class="brand" href="/">CLEANING COMPANY BLUEPRINT</a>
+    <ul>
+      <li><a href="/inner-circle">Inner Circle</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/book-a-call">Book a call</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Free tool by Cleaning Company Blueprint</span>
+    <h1>Find the best name for your cleaning company and see if your market is ready.</h1>
+    <p class="sub">
+      Enter your city and get a free instant report: real competitor data, ranked business names with domain availability, and what to charge.
+    </p>
+    <div style="margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+      <a href="https://namemycleaningcompany.com" target="_blank" rel="noopener noreferrer" class="btn">
+        Check my market for free →
+      </a>
+      <span style="color:#8A9BB0; font-size:.9rem;">No sign-up. Instant results.</span>
+    </div>
+  </div>
+</header>
+
+<!-- What you get -->
+<section class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">What the report includes</span>
+    <h2 style="max-width:28ch;">Four things in one free report, specific to your city.</h2>
+
+    <div class="what-grid">
+      <div class="what-card">
+        <h3>Market verdict</h3>
+        <p>Strong, Moderate, or Tough, pulled from real local data. Know before you spend a dollar on a business name or logo whether the opportunity is actually there.</p>
+      </div>
+      <div class="what-card">
+        <h3>Competitor teardown</h3>
+        <p>Which local cleaning companies take online bookings and show their prices. Knowing who's already set up properly tells you exactly where your opening is.</p>
+      </div>
+      <div class="what-card">
+        <h3>Ranked business names</h3>
+        <p>Names generated for your market with .com availability checked live at the time of your report. No guessing, no checking manually, no discovering later that the domain is gone.</p>
+      </div>
+      <div class="what-card">
+        <h3>Pricing guidance</h3>
+        <p>What to charge for a standard bi-weekly clean in your area, based on what's visible in your local market. A starting point grounded in real data, not a number pulled from thin air.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2 style="max-width:24ch;">Three steps. Under two minutes.</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Enter your city</h3>
+          <p>Type your city and state, province, or country, like "Columbus, OH" or "Oak Bay, BC". Add a neighborhood if you want a more specific read.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>The tool checks your market</h3>
+          <p>It pulls real competitor data from Google, checks what local cleaners are actually set up for online booking, and reads the local demand signals.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Get your report instantly</h3>
+          <p>Market verdict, competitor teardown, ranked names with live domain availability, and local pricing guidance, all in one page. No email required.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proof / built by -->
+<section class="tinted">
+  <div class="wrap">
+    <span class="eyebrow">Built by people who did it</span>
+    <h2 style="max-width:26ch;">This runs the same check we use on every discovery call.</h2>
+
+    <div class="proof">
+      <div class="proof-stat">
+        <span class="number">$2.8M</span>
+        <div class="label">in sales at Oak Bay Clean</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat">
+        <div class="proof-copy">
+        <p>Victoria and Jen built Oak Bay Clean during the pandemic and scaled it to $2.8M before quitting their day jobs. When founders book a discovery call with them, the first thing they do is run this market check. This tool makes that free and instant for anyone starting out.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="https://namemycleaningcompany.com" target="_blank" rel="noopener noreferrer" class="btn">Run my free market check →</a>
+      <a href="/about" class="btn-outline">About Vic and Jen</a>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary CTA -->
+<section class="dark">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow">Ready to go further</span>
+    <h2 style="max-width:28ch;margin-left:auto;margin-right:auto;">The Inner Circle is where you build the business after you've named it.</h2>
+    <p style="max-width:50ch;margin:1em auto 0;color:#D7D0C6;">Weekly accountability, Vic and Jen in the room with you, and a community of cleaning business owners doing the same work at the same time.</p>
+    <a href="/inner-circle" style="display:inline-block;background:var(--sage);color:var(--cream-soft);padding:16px 30px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;text-decoration:none;margin-top:28px;">
+      See what's inside the Inner Circle →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Cleaning Company Blueprint</h4>
+        <p style="margin:0;color:#C6BEB3;">Built by Vic and Jen, sisters and co-founders of Oak Bay Clean. Real people, real results, no gurus.</p>
+      </div>
+      <div>
+        <h4>Build with us</h4>
+        <ul>
+          <li><a href="/inner-circle">Inner Circle</a></li>
+          <li><a href="/products">Digital products</a></li>
+          <li><a href="/book-a-call">Book a discovery call</a></li>
+          <li><a href="/webinar-july-1">Free webinar July 1</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read &amp; watch</h4>
+        <ul>
+          <li><a href="/newsletter">Newsletter archive</a></li>
+          <li><a href="https://www.youtube.com/@CleaningCompanyBlueprint" target="_blank" rel="noopener noreferrer">YouTube channel</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/tools">Tools we use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="/name-my-cleaning-company">Name my cleaning company</a></li>
+          <li><a href="/about">Our story</a></li>
+          <li><a href="mailto:hello@cleaningcompanyblueprint.com">hello@cleaningcompanyblueprint.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      © 2026 Cleaning Company Blueprint. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
