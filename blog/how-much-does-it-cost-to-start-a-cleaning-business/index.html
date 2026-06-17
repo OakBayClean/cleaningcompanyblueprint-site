@@ -66,7 +66,13 @@ footer.site a{color:rgba(250,248,245,.7)}
 footer.site ul{list-style:none;padding:0;margin:8px 0 0}
 footer.site li{margin-bottom:8px}
 footer.site strong{color:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
-@media(max-width:700px){nav.site ul{display:none}.footer-grid{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}.cta-box{padding:32px 24px}.narrow{padding:0 20px}}
+table.compare{width:100%;max-width:680px;border-collapse:collapse;margin:1.6em 0;font-size:.95rem}
+table.compare th,table.compare td{border:1px solid var(--rule);padding:10px 13px;text-align:left;vertical-align:top}
+table.compare thead th{background:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.9rem}
+table.compare td:first-child{font-weight:600;color:var(--ink-soft)}
+.faq-q{margin-top:1.8em;font-size:1.12rem}
+.faq-q+p{margin-top:.4em}
+@media(max-width:700px){nav.site ul{display:none}.footer-grid{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}.cta-box{padding:32px 24px}.narrow{padding:0 20px}table.compare{font-size:.86rem}table.compare th,table.compare td{padding:8px 9px}}
 </style>
 <script type="application/ld+json">{
   "@context":"https://schema.org",
@@ -74,9 +80,24 @@ footer.site strong{color:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-
   "headline":"How Much Does It Cost to Start a Cleaning Business?",
   "description":"You can start for a few hundred dollars or around $800. Which number is yours comes down to one choice.",
   "datePublished":"2026-06-15",
+  "dateModified":"2026-06-17",
   "author":{"@type":"Person","name":"Victoria Westcott","url":"https://cleaningcompanyblueprint.com/about"},
   "publisher":{"@type":"Organization","name":"Cleaning Company Blueprint","url":"https://cleaningcompanyblueprint.com"},
   "mainEntityOfPage":{"@type":"WebPage","@id":"https://cleaningcompanyblueprint.com/blog/how-much-does-it-cost-to-start-a-cleaning-business/"}
+}</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do I need a license to start a cleaning business?","acceptedAnswer":{"@type":"Answer","text":"In most places, yes, a basic business license, usually $50 to $100 a year, plus business registration such as an LLC, often under $500. The exact rules are set by your city and state, so check locally before you budget."}},
+    {"@type":"Question","name":"Do I need insurance?","acceptedAnswer":{"@type":"Answer","text":"Carry general liability insurance, roughly $30 to $100 a month. Most clients will want to know you have it. If you work with independent contractors, they carry their own."}},
+    {"@type":"Question","name":"Do I need to be bonded?","acceptedAnswer":{"@type":"Answer","text":"We do not recommend it with this model. Good independent contractors and a residential client base rarely require bonding."}},
+    {"@type":"Question","name":"Can I start a cleaning business with no money?","acceptedAnswer":{"@type":"Answer","text":"You can start with very little. On the solo path, you can launch for under $300 using supplies you already own. On the company path, Convertlabs is free for your first 30 days and your cleaners are paid out of money the client has already paid, so your real out-of-pocket is your LLC and license plus the first month of tools, around $700 to $800."}},
+    {"@type":"Question","name":"What about marketing costs?","acceptedAnswer":{"@type":"Answer","text":"Marketing will cost you what you can afford to pay. You can start with nothing and lean on friends, family, and a steady push on social media to land your first clients. Or you can pay for leads through Google Ads, Google Local Services, Thumbtack, and Bark. If you go the paid route, budget somewhere around $500 to $1,000 a month until you reach about $10K a month, then $1,000 to $2,000 a month between $10K and $25K. Work on your SEO the whole way through, and it gets much easier, because you can eventually turn the paid marketing off and run on organic leads the way we do."}},
+    {"@type":"Question","name":"Should I start with residential or commercial cleaning?","acceptedAnswer":{"@type":"Answer","text":"Residential. Clients pay at the time of the clean, so the money funds the business. Commercial pays on net 30 or slower, which means floating your cleaners' pay for up to two months. Add commercial later, once your cash flow can carry it."}},
+    {"@type":"Question","name":"How much can I make?","acceptedAnswer":{"@type":"Answer","text":"Solo, your income is capped by your own hours. With a team, there is no structural cap. The real numbers: our own cleaning business has done about $2.8M in sales since July 2021. At 28% margins that is roughly $800,000 in profit, or about $13,500 a month on average, and we run it with 18 cleaners rather than pushing for more."}},
+    {"@type":"Question","name":"How long does it take if I have a full-time job?","acceptedAnswer":{"@type":"Answer","text":"Longer than if you go full time, and that is fine. One focused hour a day gets you started. The build works on a slower clock when your days are fuller."}}
+  ]
 }</script>
 </head>
 <body>
@@ -104,24 +125,33 @@ footer.site strong{color:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-
   </div>
   <div class="post-body">
 <p>You can start a cleaning business for a few hundred dollars, or for around $800. Which number is yours comes down to one choice: are you going to clean the houses, or build a company that does?</p>
-<p>Most people asking this question picture one version of a cleaning business: you, a vacuum, and a caddy of supplies, driving to houses and scrubbing them yourself. That version is cheap to start and easy to picture. It is also a job you have to show up for every single day.</p>
-<p>There is a second version, and it is the one my sister Jen and I built. We started Oak Bay Clean during the pandemic and grew it to $2.8M in sales, and we did it without ever being the ones holding the mop. That business is built on systems and a team, and the startup cost looks completely different.</p>
-<p>Both are real. Both are valid. Below I lay them out side by side so you can see exactly what you are signing up for. All figures are in US dollars. Licensing and insurance vary a lot by state and city, so treat those as starting points and check your local rules.</p>
+<p>Most people asking this question picture one version: you, a vacuum, and a caddy of supplies, driving to houses and scrubbing them yourself. That version is cheap to start and easy to picture. It is also a job you have to show up for every single day.</p>
+<p>On the flip side, maybe you have read the posts that promise you can get rich quick with an easy cleaning side hustle you never have to lift a finger for. The part about not cleaning houses yourself is kind of what my sister Jen and I did. The quick and easy part took us years of real work, so let me break it down with real numbers from our own cleaning business and from the owners we have coached to run the same model.</p>
+<p>We started our own cleaning business during the pandemic and grew it past $2.8M in sales, and we did it without ever being the ones holding the mop. That business runs on systems and a team, and the startup cost looks completely different.</p>
+<p>Below I lay both paths out side by side so you can see exactly what you are signing up for, what each one really earns, and how long it takes. All figures are in US dollars. Licensing and insurance vary a lot by location, so treat those as starting points and check your local rules.</p>
+<h2>The two paths at a glance</h2>
+<table class="compare">
+<thead><tr><th></th><th>Clean it yourself</th><th>Build a company (our model)</th></tr></thead>
+<tbody>
+<tr><td>Supplies and equipment</td><td>$300 to $1,500</td><td>$0 (your cleaners bring their own)</td></tr>
+<tr><td>Business license</td><td>$50 to $100 / year</td><td>$50 to $100 / year</td></tr>
+<tr><td>LLC registration</td><td>varies, often under $500</td><td>varies, often under $500</td></tr>
+<tr><td>Insurance</td><td>$30 to $100 / month</td><td>$30 to $100 / month</td></tr>
+<tr><td>Software and phone stack</td><td>optional</td><td>about $297 / month</td></tr>
+<tr><td>Cleaner pay</td><td>you are the cleaner</td><td>60% of each job, paid from money already collected</td></tr>
+<tr><td>Realistic opening cost</td><td>a few hundred to ~$1,500</td><td>roughly $700 to $800</td></tr>
+<tr><td>What caps your income</td><td>your own hours</td><td>nothing structural</td></tr>
+</tbody>
+</table>
 <h2>What does it cost to start a cleaning business by cleaning houses yourself?</h2>
 <p>This is the lowest barrier to entry, and you can be earning within a week. Realistically, you can open the doors for somewhere between a few hundred dollars and about $1,500.</p>
 <h3>What do you actually need to buy to get started?</h3>
 <p>The bulk of your money goes to the gear and the basics that let you take on paying work:</p>
 <ul>
 <li>Supplies and equipment: $300 to $1,500. A commercial vacuum runs $200 to $500, and a starter kit of microfiber cloths, a mop system, a caddy, and professional-grade chemicals adds another $300 to $600. You can stay at the bottom of this range if you already own a decent vacuum, and some people launch for under $300 using products they already have at home.</li>
-</ul>
-<ul>
 <li>Ongoing supplies: $15 to $40 per job for chemicals, cloths, and disposables. Build this into your pricing from day one.</li>
-</ul>
-<ul>
 <li>Business license: $50 to $100 per year in most cities. This is usually the cheapest line on the list.</li>
-</ul>
-<ul>
-<li>Insurance: roughly $40 to $50 a month for a solo operator, or $300 to $700 a year. General liability protects you if you damage a client's home, and most clients will want to know you carry it.</li>
+<li>Insurance: roughly $30 to $100 a month for a solo operator. General liability protects you if you damage a client's home, and most clients will want to know you carry it.</li>
 </ul>
 <h3>Is cleaning houses yourself a good way to start a cleaning business?</h3>
 <p>The solo path is genuinely affordable. The catch shows up later. When you clean every house yourself, your income is capped by how many hours you can physically work, and the day you stop cleaning is the day the money stops. You have bought yourself a job. Plenty of people are happy with that, and there is real honour in it. Just go in with your eyes open about what it is.</p>
@@ -132,47 +162,85 @@ footer.site strong{color:var(--cream-soft);font-family:'Plus Jakarta Sans',sans-
 <p>What you are actually paying for is the setup that lets you take bookings, look professional, and run the business properly. Here is the stack we use and what each piece costs per month:</p>
 <ul>
 <li><a href="https://convertlabs.io/blueprint" target="_blank" rel="noopener">Convertlabs</a>, your website and online booking engine: $197</li>
-</ul>
-<ul>
 <li><a href="https://get.openphone.com/1bu8m8i8th0d" target="_blank" rel="noopener">Quo</a>, your business phone line: $20</li>
-</ul>
-<ul>
 <li>Google Workspace, your professional email: $20</li>
-</ul>
-<ul>
 <li>General liability insurance through <a href="https://get.foxquilt.com/oakbayclean" target="_blank" rel="noopener">Foxquilt</a>: $40</li>
-</ul>
-<ul>
 <li>Claude, your AI assistant for the whole business: $20</li>
 </ul>
 <p>That comes to about $297 a month. Convertlabs gives you 30 days free through that link, so your first month of that piece is covered while you get set up.</p>
 <p>A quick note: the Convertlabs, Quo, and Foxquilt links above are our referral links. If you sign up through them we may earn a small commission at no extra cost to you. We only point you to tools we run our own business on.</p>
-<p>One note on the insurance line: $40 is what we pay, and general liability rates depend a lot on your location, the type of cleaning you do, and your team size. Treat our number as a real-world example and get your own quote to see where you land.</p>
-<h3>What are the one-time and local startup costs?</h3>
-<p>A few things you pay once, or that depend entirely on where you live:</p>
-<ul>
-<li>Logo: free. Make it yourself in Canva in about five minutes. We have a <a href="https://youtu.be/H4N-DF4yHiI?si=sqcG_hcIATaniPMd" target="_blank" rel="noopener">YouTube video</a> that walks you through it.</li>
-</ul>
-<ul>
-<li>LLC and city registration: highly local. This is the line that swings the most. For us, the LLC was around $300 and the city business license is $100 a year. Yours could be higher or lower, so look up your state and city before you budget.</li>
-</ul>
 <h3>How do you pay your first cleaner?</h3>
-<p>This is the part that surprises people. When you follow our model, the cleaners earn 60% of each completed job. You only pay them once a job is booked and the client has paid. Their pay comes straight out of money the business has already earned, so your first hire never comes out of your savings.</p>
+<p>When you follow our model, the cleaners earn 60% of each completed job, and you only pay them once a job is booked and the client has paid. Their pay comes straight out of money the business has already earned, so your first hire never comes out of your savings.</p>
 <p>Put it all together and you can open the doors for roughly $700 to $800. That is about one month of the software stack plus your LLC and license. After that, your main ongoing cost is the $297 a month, and everything else scales with the work your team actually does.</p>
-<h2>Can you start a cleaning business with no money?</h2>
-<p>You can start one with very little, and the two paths handle a tight budget in different ways.</p>
-<p>On the solo path, the cheapest possible start uses supplies you already own at home and products your first few clients are happy to provide, which can get you working for under $300. As soon as you have a paying client, you reinvest into your own kit.</p>
-<p>On the company path, the costs are spread out instead of stacked up. Convertlabs is free for your first 30 days, your logo is free, and your cleaners are paid 60% of each job only after the client has paid. Your real out-of-pocket to begin is your LLC and license plus the first month of tools, which lands around $700 to $800. The labour funds itself from the work.</p>
-<p>So a true zero is rare, because a license and insurance are worth having from the start. A few hundred dollars, though, is enough to begin either way.</p>
+<h2>What licenses and insurance do you actually need?</h2>
+<p>This is the line that swings the most, because it is set by your city, state, province, or country. Here is the short checklist I give people, in the order I would do it:</p>
+<ol>
+<li>Register your business. An LLC is usually under $500, and many people register for a few hundred. Look up your own state and city before you budget, because this is the one number I cannot give you.</li>
+<li>Get a city business license. In most places this runs $50 to $100 a year.</li>
+<li>Carry general liability insurance. Expect $30 to $100 a month depending on your location and the type of cleaning you do. Our line is $40.</li>
+<li>Make sure your cleaners carry their own insurance. When you work with independent contractors, the way we recommend, they are responsible for their own coverage. That keeps your costs low.</li>
+</ol>
+<p>We do not recommend bonding. With this model and good independent contractors, you should not need it, and most residential clients will not ask for it. The bigger fork in the road is contractors versus employees. If you hire employees, your own insurance and payroll costs go up, and you take on more overhead. If you work with independent contractors who carry their own insurance, the way we do, your costs stay where the numbers above show them. Check the rules where you live, because the contractor versus employee line is regulated differently in different places.</p>
+<h2>How much can you actually make?</h2>
+<p>So let's look at our actual numbers instead of guessing.</p>
+<p>We did about $1,600 in our very first month in July 2021. Our first real month, two months later, was around $9,200. We crossed $100K in cumulative sales about seven months in. We hit our first $1M by September 2023, and we passed $2.5M by the end of 2025. These days the business does between roughly $60K and $90K in a strong month.</p>
+<p>On margin: after we pay our cleaners their 60% and cover taxes, the tools, the phone, the insurance, and any marketing, about 28% of revenue is profit. On a $60K to $90K month that is roughly $17,000 to $25,000, split between Jen and me. What we leave in the bank some months is smaller, because we also pay ourselves bonuses, reinvest, and cover the odd big purchase, but 28% is the true margin the model produces.</p>
+<p>Here is what that adds up to. Since July 2021 we have done about $2.8M in sales. At our 28% margin, that is roughly $800,000 in profit, which averages about $13,500 a month across the nearly five years we have been running. We earn that with 18 cleaners. We could take on 50 and make a lot more, and Jen and I have chosen not to, because we built this for time freedom and 18 lets us live the way we want.</p>
+<p>Split between the two of us, that is about $6,750 each a month, or roughly $81,000 each a year. Here is the time it takes us now. Jen puts in about an hour a day on the bookkeeping, SEO, and branding, and she built our website herself on a Convertlabs template. I put in about two hours a day. The systems and the team are what keep it that light.</p>
+<p>Our numbers dipped hard in plenty of months. Here is what caused the worst ones.</p>
+<ul>
+<li>In September 2022 we took home negative $5,266. We had just brought two people on, and around the same stretch one of our cleaners got sick and then quit. Hiring costs and turnover landed together.</li>
+<li>In December 2022 a week-long winter storm plus Christmas bonuses pushed us into the red again.</li>
+<li>In December 2023 we spent money on a newspaper ad in the Times Colonist. It did not work. My note in the spreadsheet literally says "do NOT do this again."</li>
+<li>October and November are slow almost every year. We plan for it now.</li>
+</ul>
+<p>The mistakes taught us the model. In early 2023 our Google ad management cost ballooned to about $3,000 a month, so we fired the agency, Jen rebuilt our SEO herself, fixed the broken links, and set up our Instagram, Yelp, and Google Business profile. We eventually stopped paid advertising almost entirely. The business kept growing on the foundation we built ourselves, which is exactly what we teach you to do.</p>
+<p>So the real answer is that the costs to start are small, the margins are strong once the model is running, and the path there has real dips in it.</p>
+<h2>Should you start with residential or commercial?</h2>
+<p>Start with residential. The reason is cash flow.</p>
+<p>Residential clients pay you at the time of the clean. Commercial clients usually pay on net 30 terms, and in practice it is slower than that. Say you clean an office on June 1st. You invoice on June 30th. You get paid around July 30th. That is two months after the work was done.</p>
+<p>Now here is the squeeze. You pay your cleaner for that June 1st job on June 1st. Good cleaners are harder to find than good clients, and paying them promptly is how you keep them. So with commercial work you are floating two months of labour costs out of your own pocket before the client's money ever arrives. That takes real cash flow.</p>
+<p>The smart order is residential first, where the money comes in as the work happens. Then, once you have built up the cash flow to comfortably carry payroll for a couple of months, you let small commercial offices book you over time. Residential funds the business. Commercial scales it later, once you can afford to wait for the cheque.</p>
+<h2>How long until it pays off?</h2>
+<p>Your startup cost is small enough that you can earn it back inside your first month or two of real bookings. The bigger question is how long until the business replaces your salary, and how fast you get there comes down to how much time you can give it.</p>
+<p>Be honest with yourself about the hours. Jen and I run our own cleaning business on very little time now, and it did not start that way. In the early days I worked on it four to six hours a day. We even brought in virtual assistants to lighten the load, and it backfired. Managing them became a full-time job of checking whether they were doing the right things, our revenue slipped while my attention was split, and we pulled it back by bringing the key work in-house and tightening our systems. That is how we got to under two hours a day. An hour a day is plenty to get started, and building millions takes real daily hours and usually going all in.</p>
+<p>Jenna and Isaac are the all-in example. They run their Columbus company full time with three kids under ten, and Isaac still works as a realtor on top of it. They both left their old careers, a physician assistant and a high school math teacher, to commit fully, and inside two years they are at <a href="https://cleaningcompanyblueprint.com/blog/what-jenna-and-isaac-decided-to-do-at-80k-month/" target="_blank" rel="noopener">$80K a month</a>. Jenna has said they now make more in the cleaning company than they did at both of their old jobs combined. That pace comes from going all in.</p>
+<p>If you are building while you still hold a full-time job, it will take longer, and that is completely fine. You have less time each day, so the ramp stretches out, and there is a <a href="https://cleaningcompanyblueprint.com/blog/a-calm-way-to-build-while-you-still-have-a-job/" target="_blank" rel="noopener">calm way to build it while you still have a job</a>. Nakita went <a href="https://cleaningcompanyblueprint.com/blog/how-nakita-built-a-cleaning-business-in-2026/" target="_blank" rel="noopener">from a layoff to $10K-plus months</a> by treating the build like a job. Do something every day rather than everything in one weekend, and measure your progress against your own start line. Do not compare your month three to our month twenty.</p>
+<h2>The four stages of a cleaning business</h2>
+<p>Knowing the cost is step one. It helps to see the whole path, because the right move at the start is the wrong move later. We break it into <a href="https://cleaningcompanyblueprint.com/blog/the-four-stages-of-a-cleaning-business-which-one-are-you-in/" target="_blank" rel="noopener">four stages</a>.</p>
+<ul>
+<li>The Leap ($0 to $10K a month). Everything is new. You are landing your first clients, making your first hires, and every booking feels like a miracle. In this model you hire from the start, because the cleaners do the cleaning. The thing that kills people here is researching instead of starting. Your first recurring client is what flips this from "I'm testing this" to "I'm building this."</li>
+<li>The Engine ($10K to $25K a month). Recurring revenue becomes the majority of your work, and the hiring you started in the Leap turns into a repeatable system. The trap is staying in every job yourself because you do not trust anyone else to do it right. A bench of cleaners you trust changes the math on your time.</li>
+<li>The Boring Phase ($25K to $50K a month). The systems work, the revenue is predictable, and your brain gets bored and starts inventing problems. This is the most dangerous stage, and the discipline to <a href="https://cleaningcompanyblueprint.com/blog/let-it-be-boring/" target="_blank" rel="noopener">let it be boring</a> is the whole job. That steady margin is what gave Jen and me the room to build Cleaning Company Blueprint.</li>
+<li>The Other Side ($50K-plus a month). The business runs without your daily involvement. Our cleaning business now takes me less than two hours a day, and margins at this stage run 28 to 32 percent. The question that surprises everyone here is "now what," and you get to answer it.</li>
+</ul>
 <h2>What is the biggest money mistake new cleaning business owners make?</h2>
 <p>The most expensive mistake we see is staying solo forever when you actually wanted a company.</p>
 <p>People start solo to keep costs low, which makes complete sense. Then they get busy, stay busy, and never build the systems that would let them step out of the cleaning itself. Five years later they are still scrubbing floors, exhausted, and wondering why the business feels exactly like a job. You measure that cost in years of your life.</p>
+<p>The second most expensive mistake is taking on commercial work before your cash flow can carry it, and getting squeezed by net 30 terms while you front your cleaners' pay. Build the residential base first.</p>
 <p>If your goal is to build something that runs without you, set it up that way from the start. The setup cost is low, and the structure is what gives you your freedom later. Building it alongside people who are a few steps ahead makes it faster, and that is exactly what we do together inside <a href="https://cleaningcompanyblueprint.com/inner-circle/" target="_blank" rel="noopener">the Inner Circle</a>.</p>
+<h2>Frequently asked questions</h2>
+<h3 class="faq-q">Do I need a license to start a cleaning business?</h3>
+<p>In most places, yes, a basic business license, usually $50 to $100 a year, plus business registration such as an LLC, often under $500. The exact rules are set by your city and state, so check locally before you budget.</p>
+<h3 class="faq-q">Do I need insurance?</h3>
+<p>Carry general liability insurance, roughly $30 to $100 a month. Most clients will want to know you have it. If you work with independent contractors, they carry their own.</p>
+<h3 class="faq-q">Do I need to be bonded?</h3>
+<p>We do not recommend it with this model. Good independent contractors and a residential client base rarely require bonding.</p>
+<h3 class="faq-q">Can I start a cleaning business with no money?</h3>
+<p>You can start with very little. On the solo path, you can launch for under $300 using supplies you already own. On the company path, Convertlabs is free for your first 30 days and your cleaners are paid out of money the client has already paid, so your real out-of-pocket is your LLC and license plus the first month of tools, around $700 to $800.</p>
+<h3 class="faq-q">What about marketing costs?</h3>
+<p>Marketing will cost you what you can afford to pay. You can start with nothing and lean on friends, family, and a steady push on social media to land your first clients. Or you can pay for leads through Google Ads, Google Local Services, Thumbtack, and Bark. If you go the paid route, budget somewhere around $500 to $1,000 a month until you reach about $10K a month, then $1,000 to $2,000 a month between $10K and $25K. Work on your SEO the whole way through, and it gets much easier, because you can eventually turn the paid marketing off and run on organic leads the way we do.</p>
+<h3 class="faq-q">Should I start with residential or commercial cleaning?</h3>
+<p>Residential. Clients pay at the time of the clean, so the money funds the business. Commercial pays on net 30 or slower, which means floating your cleaners' pay for up to two months. Add commercial later, once your cash flow can carry it.</p>
+<h3 class="faq-q">How much can I make?</h3>
+<p>Solo, your income is capped by your own hours. With a team, there is no structural cap. The real numbers: our own cleaning business has done about $2.8M in sales since July 2021. At 28% margins that is roughly $800,000 in profit, or about $13,500 a month on average, and we run it with 18 cleaners rather than pushing for more.</p>
+<h3 class="faq-q">How long does it take if I have a full-time job?</h3>
+<p>Longer than if you go full time, and that is fine. One focused hour a day gets you started. The build works on a slower clock when your days are fuller.</p>
 <h2>So how much does it really cost to start a cleaning business?</h2>
 <p>If you want to clean houses yourself, you can start for a few hundred dollars up to about $1,500.</p>
-<p>If you want to build a real company that runs without you holding the mop, you can open the doors for roughly $700 to $800, then run on about $297 a month, with your team's pay coming straight out of the jobs they complete.</p>
+<p>If you want to build a company that runs without you holding the mop, you can open the doors for roughly $700 to $800, then run on about $297 a month, with your team's pay coming straight out of the jobs they complete.</p>
 <p>Both numbers are small compared to what most people assume. The real question is which business you actually want to wake up to in five years.</p>
-<p>Want the exact step-by-step? Our free 22-Day Cleaning Company Master Checklist gives you the precise task for each day, with links to the YouTube tutorials that walk you through every part of the process. If you want the full written walkthrough, the <a href="https://cleaningcompanyblueprint.com/products/" target="_blank" rel="noopener">22-Day Cleaning Company Blueprint</a> lays out every step in order. It is the same path we used to build Oak Bay Clean, and it is the foundation of everything we teach at <a href="https://cleaningcompanyblueprint.com/" target="_blank" rel="noopener">Cleaning Company Blueprint</a>.</p>
+<p>Want the exact step-by-step? Our free 22-Day Cleaning Company Master Checklist gives you the precise task for each day, with links to the YouTube tutorials that walk you through every part of the process. If you want the full written walkthrough, the <a href="https://cleaningcompanyblueprint.com/products/" target="_blank" rel="noopener">22-Day Cleaning Company Blueprint</a> lays out every step in order. It is the same path we used to build our own cleaning business, and it is the foundation of everything we teach at <a href="https://cleaningcompanyblueprint.com/" target="_blank" rel="noopener">Cleaning Company Blueprint</a>.</p>
     <div class="cta-box">
       <h3>Get the weekly newsletter</h3>
       <p>Real stories and practical advice from two sisters who built a $2.8M cleaning business. Free every Monday.</p>
